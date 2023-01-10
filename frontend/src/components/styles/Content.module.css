@@ -1,0 +1,76 @@
+.contentContainer {
+  position: relative;
+
+  padding: 5rem 3rem;
+}
+
+.contentFeatures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 0 20rem;
+}
+
+.contentImages {
+  margin-top: 10%;
+  height: 17em;
+  width: 50%;
+
+  margin-left: 25%;
+
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.295);
+}
+
+.contentSection {
+  margin-top: 10%;
+  margin-left: 25%;
+}
+
+.contentTitles {
+  color: red;
+}
+
+.contentSubtitles {
+  margin-bottom: 1.5rem;
+}
+
+.contentText {
+  font-size: 0.7rem;
+  font-weight: bold;
+
+  width: 100%;
+
+  margin-bottom: 3rem;
+}
+
+.findAgent {
+  background-color: #d9d9d9;
+  font-size: 1rem;
+  font-weight: 600;
+
+  padding: 1rem 4rem;
+  border-radius: 10px;
+  border: none;
+
+  cursor: pointer;
+}
+
+.findAgent:hover {
+  background-color: #d9d9d987;
+}
+
+.findRentals {
+  background-color: #d5443f;
+  font-size: 1rem;
+  color: #f1f1f1;
+
+  padding: 1rem 4rem;
+  border-radius: 10px;
+  border: none;
+
+  cursor: pointer;
+}
+
+.findRentals:hover {
+  background-color: #f86560;
+}

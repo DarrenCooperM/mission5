@@ -1,0 +1,82 @@
+.contactContainer {
+  border-top: 1px solid red;
+  background-color: var(--clr-grey-10);
+
+  padding: 0 10em;
+
+  display: grid;
+  place-items: center;
+}
+
+.contactTitle {
+  margin-top: 2.5em;
+}
+
+.contacts {
+  display: flex;
+}
+
+.emailContainer {
+  padding: 5em;
+}
+
+.email {
+  font-size: 30px;
+}
+
+.emailAddress {
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 1em;
+}
+
+.callContainer {
+  padding: 5em;
+}
+
+.call {
+  font-size: 30px;
+}
+
+.phNumber {
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 1em;
+}
+
+.icons {
+  margin-right: 0.75em;
+}
+
+.subscribe {
+  padding-bottom: 5em;
+}
+
+.subscribeText {
+  font-weight: 500;
+}
+
+.subscribeInput {
+  width: 300px;
+  height: 40px;
+  padding-left: 5px;
+
+  border: 1px solid var(--clr-grey-6);
+  border-right: none;
+}
+
+.subscribeBtn {
+  width: 200px;
+  height: 40px;
+  color: var(--clr-white);
+  font-weight: 500;
+
+  text-decoration: none;
+  border: none;
+  background-color: var(--clr-red-light);
+}
+
+.subscribeBtn:hover {
+  background-color: var(--clr-red-dark);
+  color: var(--clr-black);
+}
