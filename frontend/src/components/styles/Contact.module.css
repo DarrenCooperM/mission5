@@ -25,9 +25,15 @@
 }
 
 .emailAddress {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
   padding-top: 1em;
+
+  cursor: pointer;
+}
+
+.emailAddress:hover {
+  text-decoration: underline;
 }
 
 .callContainer {
@@ -39,9 +45,15 @@
 }
 
 .phNumber {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
   padding-top: 1em;
+
+  cursor: pointer;
+}
+
+.phNumber:hover {
+  text-decoration: underline;
 }
 
 .icons {
