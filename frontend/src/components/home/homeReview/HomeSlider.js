@@ -2,7 +2,7 @@ import React from "react";
 import Review from "./Review";
 import styles from "../../styles/HomeSlider.module.css";
 
-function App() {
+function HomeSlider() {
   return (
     <div className={styles.reviewContainer}>
       <h2 className={styles.reviewClients}>What Our Clients Say About Us</h2>
@@ -16,4 +16,4 @@ function App() {
   );
 }
 
-export default App;
+export default HomeSlider;
