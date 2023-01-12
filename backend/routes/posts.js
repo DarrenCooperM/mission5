@@ -2,8 +2,8 @@ const express = require("express");
 const res = require("express/lib/response");
 const router = express.Router();
 
-const Post = require("../model/Post");
-const Review = require("../model/Review");
+// importing mongodb schema
+const Post = require("../Schemas/Post");
 
 // Get all the post
 router.get("/", async (req, res) => {
@@ -25,22 +25,6 @@ router.post("/info", async (req, res) => {
   console.log(post);
   try {
     const savedPost = await post.save();
-    res.json(savedPost);
-  } catch (error) {
-    res.json({ message: error });
-  }
-});
-
-router.post("/ReviewsData", async (req, res) => {
-  const Reviews = new Review({
-    id: req.body.id,
-    name: req.body.name,
-    job: req.body.job,
-    text: req.body.text,
-  });
-  console.log(Reviews);
-  try {
-    const savedPost = await Reviews.save();
     res.json(savedPost);
   } catch (error) {
     res.json({ message: error });
