@@ -6,27 +6,27 @@ import { FaSearch } from "react-icons/fa";
 export default function HomeNav() {
   return (
     <>
-      <header>
+      <div className={styles.navbarContainer}>
         <img className={styles.navImg} src={navImg} alt="navImg" />
         <nav>
           <ul class={styles.navbarLinks}>
             <li>
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a href="#">Services</a>
+              <a href="/">Services</a>
             </li>
             <li>
-              <a href="#">Blog</a>
+              <a href="/">Blog</a>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <a href="/">About Us</a>
             </li>
             <li>
-              <a href="#">Join Us</a>
+              <a href="/">Join Us</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="/">Contact</a>
             </li>
           </ul>
         </nav>
@@ -38,7 +38,7 @@ export default function HomeNav() {
             placeholder="Search all of Metro Property"
           ></input>
         </div>
-      </header>
+      </div>
     </>
   );
 }

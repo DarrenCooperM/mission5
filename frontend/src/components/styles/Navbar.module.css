@@ -1,12 +1,20 @@
-header {
+.navbarContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   padding: 50px 10%;
+  height: 40px;
+  width: 100%;
+
   background: #f1f1f1;
-  height: 60px;
+  border-bottom: 1px solid var(--clr-black);
+
   font-family: "Open Sans", sans-serif;
   font-size: 0.8rem;
+
+  position: fixed;
+  z-index: 4000;
 }
 
 .navImg {
@@ -37,14 +45,18 @@ header {
   position: absolute;
 
   right: 10px;
-  top: 6px;
+  top: 10px;
+
+  cursor: pointer;
 }
 
 .searchBar {
-  height: 35px;
-  width: 300px;
+  height: 45px;
+  width: 350px;
 
   font-size: 0.8rem;
 
   padding-left: 5px;
+
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.295);
 }

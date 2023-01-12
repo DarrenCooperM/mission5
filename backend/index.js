@@ -12,6 +12,7 @@ app.use(cors());
 const postRouter = require("./routes/posts");
 const contentRouter = require("./routes/contents");
 const subscribeRouter = require("./routes/subscription");
+const imageRouter = require("./routes/contentsImg");
 
 // middlewares
 // app.use(bodyParser.json());
@@ -19,6 +20,8 @@ const subscribeRouter = require("./routes/subscription");
 app.use("/posts", postRouter);
 app.use("/content", contentRouter);
 app.use("/subscription", subscribeRouter);
+app.use("/contentsImg", imageRouter);
+
 app.get("/", (req, res) => {
   res.send("Hello From Darren !");
 });

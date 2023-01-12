@@ -1,16 +1,18 @@
 import React from "react";
 import styles from "../styles/Content.module.css";
-import aptImg from "../images/apt.png";
-import interior from "../images/interior.jpg";
-import rentals from "../images/rentals.jpg";
-import axios from "axios";
+// import aptImg from "../images/apt.png";
+// import interior from "../images/interior.jpg";
+// import rentals from "../images/rentals.jpg";
+// import axios from "axios";
 import { useState, useEffect } from "react";
 
-// need to find a way to center the content below and its veering off to the left a bit. idk why
-
 export default function HomeContent() {
+  // text content state
   const [displayContent, setDisplayContent] = useState("");
+  // image state
+  const [imageURL, setImageURL] = useState("");
 
+  // getting text content from db
   useEffect(() => {
     fetch("http://localhost:7070/content/contentinfo")
       .then((res) => res.json())
@@ -20,11 +22,25 @@ export default function HomeContent() {
       });
   }, []);
 
+  // getting the image from db
+  useEffect(() => {
+    fetch("http://localhost:7070/contentsImg/content-images")
+      .then((res) => res.json())
+      .then((imageData) => {
+        console.log(imageData);
+        setImageURL(imageData);
+      });
+  }, []);
+
   return (
     <div className={styles.contentContainer}>
       <div className={styles.contentFeatures}>
         {/* first section  */}
-        <img className={styles.contentImages} src={aptImg} alt="aptImg" />
+        <img
+          className={styles.contentImages}
+          src={imageURL && imageURL[0].url}
+          alt="aptImg"
+        />
         <div className={styles.contentSection}>
           <h3 className={styles.contentTitles}>
             {displayContent && displayContent[0].title}
@@ -52,9 +68,17 @@ export default function HomeContent() {
           </p>
           <button className={styles.findAgent}>Find An Agent</button>
         </div>
-        <img className={styles.contentImages} src={interior} alt="interior" />
+        <img
+          className={styles.contentImages}
+          src={imageURL && imageURL[1].url}
+          alt="aptImg"
+        />
         {/* third section  */}
-        <img className={styles.contentImages} src={rentals} alt="rentals" />
+        <img
+          className={styles.contentImages}
+          src={imageURL && imageURL[2].url}
+          alt="rental pic"
+        />
         <div className={styles.contentSection}>
           <h3 className={styles.contentTitles}>
             {displayContent && displayContent[2].title}
