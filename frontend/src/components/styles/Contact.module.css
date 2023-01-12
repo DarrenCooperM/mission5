@@ -1,5 +1,5 @@
 .contactContainer {
-  border-top: 1px solid red;
+  border-top: 3px solid var(--clr-red-dark);
   background-color: var(--clr-grey-10);
 
   padding: 0 10em;
@@ -69,19 +69,22 @@
 }
 
 .subscribeInput {
-  width: 300px;
-  height: 40px;
+  width: 400px;
+  height: 55px;
   padding-left: 5px;
+
+  font-size: 25px;
 
   border: 1px solid var(--clr-grey-6);
   border-right: none;
 }
 
 .subscribeBtn {
-  width: 200px;
-  height: 40px;
+  width: 250px;
+  height: 55px;
   color: var(--clr-white);
   font-weight: 500;
+  font-size: 25px;
 
   text-decoration: none;
   border: none;
@@ -91,4 +94,9 @@
 .subscribeBtn:hover {
   background-color: var(--clr-red-dark);
   color: var(--clr-black);
+}
+
+.subscribeResult {
+  padding-left: 40px;
+  padding-top: 10px;
 }

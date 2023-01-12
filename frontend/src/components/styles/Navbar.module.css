@@ -26,3 +26,25 @@ header {
   font-size: 15px;
   padding: 0px 30px;
 }
+
+.searchContainer {
+  position: relative;
+}
+
+.searchIcon {
+  font-size: 22px;
+
+  position: absolute;
+
+  right: 10px;
+  top: 6px;
+}
+
+.searchBar {
+  height: 35px;
+  width: 300px;
+
+  font-size: 0.8rem;
+
+  padding-left: 5px;
+}

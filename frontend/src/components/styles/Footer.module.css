@@ -1,9 +1,33 @@
 .footerContainer {
+  border-top: 4px groove var(--clr-grey-8);
+  background-color: var(--clr-grey-10);
+
   display: grid;
   place-items: center;
+}
 
-  background-color: var(--clr-grey-10);
-  border-top: 3px groove var(--clr-grey-8);
+.footerFlex {
+  display: flex;
+  justify-content: space-between;
+
+  width: 50%;
+  margin: 5%;
+}
+
+.contentContainers li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.footerTitles {
+  margin-bottom: 15%;
+
+  color: var(--clr-red-dark);
+}
+
+.iconsContainer {
+  display: grid;
+  place-items: center;
 }
 
 .socialsIcons {
@@ -12,20 +36,20 @@
 
 .facebook {
   margin: 10px;
-  font-size: 20px;
+  font-size: 30px;
 
   cursor: pointer;
 }
 
 .instagram {
   margin: 10px;
-  font-size: 20px;
+  font-size: 30px;
 
   cursor: pointer;
 }
 
 .copyright {
-  font-size: 10px;
+  font-size: 12px;
 
   padding: 10px;
 }

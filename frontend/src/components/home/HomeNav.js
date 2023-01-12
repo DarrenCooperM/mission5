@@ -1,6 +1,7 @@
 import React from "react";
 import navImg from "../images/navImg.png";
 import styles from "../styles/Navbar.module.css";
+import { FaSearch } from "react-icons/fa";
 
 export default function HomeNav() {
   return (
@@ -29,6 +30,14 @@ export default function HomeNav() {
             </li>
           </ul>
         </nav>
+        <div className={styles.searchContainer}>
+          <FaSearch className={styles.searchIcon} />
+          <input
+            className={styles.searchBar}
+            type="text"
+            placeholder="Search all of Metro Property"
+          ></input>
+        </div>
       </header>
     </>
   );
