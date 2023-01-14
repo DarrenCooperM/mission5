@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/Brands.module.css";
+import styles from "../styles/home/Brands.module.css";
 import qcl from "../icons/qcl.jpg";
 import westpac from "../icons/westpac.png";
 import rea from "../icons/rea.png";

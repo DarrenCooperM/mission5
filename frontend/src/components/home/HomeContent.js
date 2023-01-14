@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/Content.module.css";
+import styles from "../styles/home/Content.module.css";
 // import aptImg from "../images/apt.png";
 // import interior from "../images/interior.jpg";
 // import rentals from "../images/rentals.jpg";

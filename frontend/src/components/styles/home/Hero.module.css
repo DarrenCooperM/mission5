@@ -12,7 +12,7 @@
 
 .banner {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../images/homeHeroImg.png");
+    url("../../images/homeHeroImg.png");
   background-size: cover;
   background-position: center;
   position: relative;

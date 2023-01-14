@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReviewDetails from "./ReviewDetails";
 import { FaChevronLeft, FaChevronRight, FaQuoteRight } from "react-icons/fa";
-import styles from "../../styles/HomeSlider.module.css";
+import styles from "../../styles/home/HomeSlider.module.css";
 
 const Review = () => {
   const [index, setIndex] = useState(0);

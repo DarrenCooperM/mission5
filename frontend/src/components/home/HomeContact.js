@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/Contact.module.css";
+import styles from "../styles/home/Contact.module.css";
 import { FaPhone } from "react-icons/fa";
 import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
 import axios from "axios";

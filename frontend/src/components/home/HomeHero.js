@@ -1,6 +1,6 @@
 import React from "react";
 // import heroImage from "../images/homeHeroImg.png";
-import styles from "../styles/Hero.module.css";
+import styles from "../styles/home/Hero.module.css";
 
 // need to sort background styling for main title
 

@@ -1,6 +1,6 @@
 import React from "react";
 import Review from "./Review";
-import styles from "../../styles/HomeSlider.module.css";
+import styles from "../../styles/home/HomeSlider.module.css";
 
 function HomeSlider() {
   return (

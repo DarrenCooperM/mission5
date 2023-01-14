@@ -1,6 +1,6 @@
 import React from "react";
 import navImg from "../images/navImg.png";
-import styles from "../styles/Navbar.module.css";
+import styles from "../styles/home/Navbar.module.css";
 import { FaSearch } from "react-icons/fa";
 
 export default function HomeNav() {
@@ -26,7 +26,7 @@ export default function HomeNav() {
               <a href="/">Join Us</a>
             </li>
             <li>
-              <a href="/">Contact</a>
+              <a href="/Contact">Contact</a>
             </li>
           </ul>
         </nav>
