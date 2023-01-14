@@ -20,6 +20,8 @@
 .navImg {
   width: 250px;
   height: 70px;
+
+  cursor: pointer;
 }
 
 .navbarLinks {

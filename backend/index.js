@@ -13,6 +13,7 @@ const postRouter = require("./routes/posts");
 const contentRouter = require("./routes/contents");
 const subscribeRouter = require("./routes/subscription");
 const imageRouter = require("./routes/contentsImg");
+const greetingRouter = require("./routes/greeting");
 
 // middlewares
 // app.use(bodyParser.json());
@@ -21,6 +22,7 @@ app.use("/posts", postRouter);
 app.use("/content", contentRouter);
 app.use("/subscription", subscribeRouter);
 app.use("/contentsImg", imageRouter);
+app.use("/greeting", greetingRouter);
 
 app.get("/", (req, res) => {
   res.send("Hello From Darren !");

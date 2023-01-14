@@ -1,0 +1,37 @@
+.contentContainer {
+  display: grid;
+  place-items: center;
+
+  background-color: var(--clr-grey-10);
+}
+
+.contentFeatures {
+  display: flex;
+  justify-content: space-evenly;
+
+  padding: 5%;
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.leftContent {
+  width: 75%;
+}
+
+.leftContentTitle {
+  font-size: var(--font-size-7);
+  font-weight: 500;
+}
+
+.leftContentText {
+  font-size: var(--font-size-2);
+  font-weight: 500;
+
+  margin-bottom: 10%;
+}
+
+.leftContentBtn {
+  background: transparent;
+  padding: 10px 120px 10px 120px;
+}

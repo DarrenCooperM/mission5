@@ -1,0 +1,53 @@
+.greetingContainer {
+  display: grid;
+  place-items: center;
+  gap: 10%;
+  margin-top: 5%;
+}
+
+.greetingInput {
+  margin-right: 0;
+  border: none;
+  font-size: inherit;
+  transition: width 200ms;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  width: 200px;
+  color: var(--clr-red-light);
+  border: 1px solid var(--clr-red-dark);
+  border-radius: 15px;
+
+  text-align: center;
+  font-size: 25px;
+}
+
+.greetingInput:focus {
+  width: 450px;
+}
+
+.greetingBtn {
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 600;
+
+  padding: 1rem 4rem;
+  border-radius: 10px;
+  border: 2px solid var(--clr-red-dark);
+
+  cursor: pointer;
+}
+
+.greetingBtn:hover {
+  border: 2px solid var(--clr-red-light);
+  color: var(--clr-red-dark);
+}
+
+.greetingResult {
+  color: green;
+  font-size: 100px;
+  text-transform: uppercase;
+  border: 10px dashed pink;
+  border-radius: 30px;
+  padding: 2%;
+}

@@ -7,7 +7,9 @@ export default function HomeNav() {
   return (
     <>
       <div className={styles.navbarContainer}>
-        <img className={styles.navImg} src={navImg} alt="navImg" />
+        <a href="/">
+          <img className={styles.navImg} src={navImg} alt="navImg" />
+        </a>
         <nav>
           <ul class={styles.navbarLinks}>
             <li>
@@ -23,7 +25,7 @@ export default function HomeNav() {
               <a href="/">About Us</a>
             </li>
             <li>
-              <a href="/">Join Us</a>
+              <a href="/Mission-Task">Mission Task</a>
             </li>
             <li>
               <a href="/Contact">Contact</a>
