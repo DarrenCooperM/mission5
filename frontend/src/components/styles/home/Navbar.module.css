@@ -12,6 +12,7 @@
 
   font-family: "Open Sans", sans-serif;
   font-size: 0.8rem;
+  z-index: 39;
 
   /* position: fixed;
   z-index: 4000; */
@@ -35,7 +36,50 @@
   font-weight: 700;
   font-size: 15px;
   padding: 0px 30px;
+
+  cursor: pointer;
 }
+
+.navbarLinks li a:hover {
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--clr-black);
+}
+
+.FaArrow {
+  padding-left: 5px;
+}
+
+.dropdownMenu {
+  position: absolute;
+  z-index: 40;
+  /* margin-top: 20px; */
+
+  height: auto;
+  width: 400px;
+  padding-top: 25px;
+
+  background-color: #f1f1f1;
+}
+
+.dropdownMenu li {
+  list-style: none;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+
+.dropdownMenu li:hover {
+  text-decoration: underline;
+}
+
+.dropdownContainer {
+  margin-top: 30px;
+}
+
+/* .dropdownList {
+  padding: 20px;
+} */
 
 .searchContainer {
   position: relative;

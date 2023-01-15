@@ -34,6 +34,14 @@
 .leftContentBtn {
   background: transparent;
   padding: 10px 120px 10px 120px;
+
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.backIcon {
+  font-size: 25px;
+  margin-right: 10px;
 }
 
 .rightContentContainer {
@@ -82,6 +90,10 @@
 
 .sendBtnContainer {
   margin-top: 10%;
+}
+
+.submitResult {
+  color: green;
 }
 
 .sendBtn {
