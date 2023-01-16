@@ -1,0 +1,53 @@
+.progressMainContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.circle {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: white;
+  outline: 1px solid #5dadec;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #5dadec;
+}
+
+.circleComplete {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #5dadec;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+.circleContainers {
+  z-index: 90;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.dottedLine {
+  z-index: -1;
+  position: absolute;
+  width: 75%;
+  margin-bottom: 90px;
+  border-bottom: 2px dashed #bdbcba;
+} /*# sourceMappingURL=App.css.map */

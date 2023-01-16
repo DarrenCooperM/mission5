@@ -1,0 +1,15 @@
+.formsContainer {
+  max-width: 50%;
+}
+
+.formstitle {
+  font-size: 30px;
+  margin: 5px 0 15px 0;
+}
+
+.inputData {
+  width: 420px;
+  margin: 20px 20px 20px 0px;
+  padding: 10px 5px 10px 5px;
+  border-radius: 8px;
+}

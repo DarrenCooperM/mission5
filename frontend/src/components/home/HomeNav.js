@@ -53,7 +53,7 @@ export default function HomeNav() {
                 ></SlArrowUp>
               ) : (
                 <SlArrowDown
-                  className={styles.FaArrow}
+                  className={styles.slarrow}
                   onClick={clickedArrow}
                 ></SlArrowDown>
               )}
@@ -100,7 +100,7 @@ export default function HomeNav() {
                       <BsArrowRight />
                       <span className={styles.dropdownText}>Decluttering </span>
                     </li>
-                    <Link to="/Contact">
+                    <Link to="/Application">
                       <li>
                         {" "}
                         <BsArrowRight />

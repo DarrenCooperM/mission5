@@ -1,0 +1,43 @@
+.CoApplicantsContainer {
+  margin: 40px 0 20px 0;
+  max-width: 30%;
+}
+
+.nonTenantContainer {
+  max-width: 60%;
+  margin: 40px 0 20px 0;
+}
+
+.nonTenantContainerForm {
+  max-width: 60%;
+  margin: 0 0 20px 0;
+}
+
+.CoAppTitle {
+  font-size: 30px;
+}
+
+.CoAppSubTitle {
+  font-size: 12px;
+}
+
+.inputData {
+  margin: 20px 20px 20px 0px;
+  padding: 10px 5px 10px 5px;
+  border-radius: 8px;
+  width: 200px;
+}
+
+.inputEmail {
+  margin: 20px 20px 20px 0px;
+  padding: 10px 5px 10px 5px;
+  border-radius: 8px;
+  width: 420px;
+}
+
+.addBtn {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: var(--clr-red-dark);
+}

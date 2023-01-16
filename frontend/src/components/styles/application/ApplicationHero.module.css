@@ -1,0 +1,11 @@
+.ApplicationHeroContainer {
+  display: grid;
+  place-items: center;
+}
+
+.heroImg {
+  margin: 5%;
+
+  height: 50vh;
+  width: 1500px;
+}
