@@ -2,7 +2,6 @@ import React from "react";
 import styles from "../styles/contact/ContactContent.module.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
-// RiArrowLeftSLine
 import { RiArrowLeftSLine } from "@react-icons/all-files/ri/RiArrowLeftSLine";
 
 export default function ContactContent() {
@@ -20,21 +19,23 @@ export default function ContactContent() {
   }, []);
 
   // submit data to database
-  // function handleUserInput(e) {
-  //   setUserInput((prevState) => {
-  //     return { ...prevState, [e.target.name]: e.target.value };
-  //   });
-  // }
   function handleUserInput(e) {
-    const { name, value } = e.target;
-    let parsedValue = value;
-    if (name === "specificStateName") {
-      parsedValue = parseInt(value);
-    }
     setUserInput((prevState) => {
-      return { ...prevState, [name]: parsedValue };
+      return { ...prevState, [e.target.name]: e.target.value };
     });
   }
+  // submit data to database
+  // converts string to integer for phone number input
+  // function handleUserInput(e) {
+  //   const { name, value } = e.target;
+  //   let parsedValue = value;
+  //   if (name === "string") {
+  //     parsedValue = parseInt(value);
+  //   }
+  //   setUserInput((prevState) => {
+  //     return { ...prevState, [name]: parsedValue };
+  //   });
+  // }
 
   const handleSubmit = (e) => {
     console.log(userInput);

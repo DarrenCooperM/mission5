@@ -30,19 +30,15 @@
   list-style: none;
 }
 
-.navbarLinks li a {
+.navbarLinks button {
   text-decoration: none;
+  border: none;
   color: #000;
   font-weight: 700;
   font-size: 15px;
   padding: 0px 30px;
 
-  cursor: pointer;
-}
-
-.navbarLinks li a:hover {
-  padding-bottom: 10px;
-  border-bottom: 2px solid var(--clr-black);
+  /* cursor: pointer; */
 }
 
 .FaArrow {
@@ -51,8 +47,9 @@
 
 .dropdownMenu {
   position: absolute;
+  backdrop-filter: blur(8px);
   z-index: 40;
-  /* margin-top: 20px; */
+  /* padding-top: 20px; */
 
   height: auto;
   width: 400px;
@@ -63,10 +60,14 @@
 
 .dropdownMenu li {
   list-style: none;
+  text-align: left;
 
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 15px;
+
+  color: var(--clr-black);
+  text-decoration: none;
 }
 
 .dropdownMenu li:hover {
@@ -75,6 +76,10 @@
 
 .dropdownContainer {
   margin-top: 30px;
+}
+
+.dropdownText {
+  padding-left: 5px;
 }
 
 /* .dropdownList {
