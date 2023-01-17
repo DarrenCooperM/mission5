@@ -7,7 +7,8 @@ export default function OtherReferencesForm({ setAddRef }) {
     setAddRef(false);
   };
   return (
-    <div className={styles.currentLandlordContainer}>
+    <>
+      <h3 className={styles.landlordFormTitle}>Additional Reference</h3>
       <form className={styles.formData}>
         <input
           type="text"
@@ -32,6 +33,6 @@ export default function OtherReferencesForm({ setAddRef }) {
         <AiOutlineMinus />
         Cancel Reference
       </button>
-    </div>
+    </>
   );
 }

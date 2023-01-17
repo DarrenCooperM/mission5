@@ -13,7 +13,7 @@ export default function LandlordPreferences() {
 
   return (
     <div className={styles.currentLandlordContainer}>
-      <h3 className={styles.landlordTitle}>Current Landlord</h3>
+      <h3 className={styles.landlordTitle}>Landlord References</h3>
       <p className={styles.landlordSubTitle}>
         The purpose of collecting this information is to conduct a reference
         check to determine your suitability as a tenant
@@ -38,7 +38,10 @@ export default function LandlordPreferences() {
           placeholder="Landlord/Agent Mobile"
         />
       </form>
-      <button onClick={addingLandlord} className={styles.addBtn}>
+      <button
+        onClick={addingLandlord}
+        className={addLandlord ? styles.hidden : styles.addBtn}
+      >
         <AiOutlinePlus />
         Add Another Landlord Reference
       </button>

@@ -8,8 +8,8 @@ export default function LandlordPreferencesForm({ setAddLandlord }) {
   };
   return (
     <div>
-      {" "}
       <form className={styles.formData}>
+        <h3 className={styles.landlordFormTitle}>Additional Reference</h3>
         <input
           type="text"
           name="Address"

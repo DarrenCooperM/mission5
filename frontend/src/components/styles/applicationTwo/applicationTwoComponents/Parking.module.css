@@ -1,0 +1,50 @@
+.parkingContainer {
+  margin: 40px 0 20px 0;
+  max-width: 100%;
+}
+
+.parkingTitle {
+  font-size: 30px;
+}
+
+.parkingSubTitle {
+  font-size: 12px;
+}
+
+.radioBtnsContainer {
+  margin-bottom: 20px;
+}
+
+.radioBtns {
+  margin: 15px 0 0 5px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.295);
+}
+
+.radioLabel {
+  padding-left: 5px;
+  font-size: 15px;
+}
+
+.inputData {
+  margin: 5px 7px 5px 0px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 8px;
+  width: 210px;
+}
+
+.parkingFormsTitle {
+  margin: 15px 0 0 0;
+
+  font-size: 20px;
+}
+
+.addBtn {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: var(--clr-red-dark);
+}
+
+.hidden {
+  display: none;
+}

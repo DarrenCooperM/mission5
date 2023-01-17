@@ -37,7 +37,10 @@ export default function OtherReference() {
           placeholder="Landlord/Agent Mobile"
         />
       </form>
-      <button onClick={addingRef} className={styles.addBtn}>
+      <button
+        onClick={addingRef}
+        className={addRef ? styles.hidden : styles.addBtn}
+      >
         <AiOutlinePlus />
         Add Another Reference
       </button>

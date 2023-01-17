@@ -8,6 +8,7 @@ export default function CoApplicantsAddForm({ setAddApplicant }) {
   };
   return (
     <div className={styles.CoApplicantContainer}>
+      <h3 className={styles.CoApplicantFormTitle}>Additional Applicant</h3>
       <form className={styles.formData}>
         <input
           type="text"

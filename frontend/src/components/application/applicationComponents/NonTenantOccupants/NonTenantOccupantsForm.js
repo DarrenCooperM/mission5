@@ -8,6 +8,7 @@ export default function NonTenantOccupantsForm({ setAddOccupant }) {
   };
   return (
     <div className={styles.nonTenantContainerForm}>
+      <h3 className={styles.nonTenantFormTitle}>Additional occupant</h3>
       <form className={styles.formData}>
         <input
           type="text"

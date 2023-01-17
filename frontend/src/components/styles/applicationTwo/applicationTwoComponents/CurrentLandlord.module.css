@@ -18,9 +18,18 @@
   width: 420px;
 }
 
+.landlordFormTitle {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
 .addBtn {
   background-color: transparent;
   border: none;
   font-size: 20px;
   color: var(--clr-red-dark);
+}
+
+.hidden {
+  display: none;
 }

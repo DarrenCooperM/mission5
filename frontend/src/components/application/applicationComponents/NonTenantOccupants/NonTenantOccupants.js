@@ -24,7 +24,7 @@ export default function NonTenantOccupants() {
           placeholder="Full Name"
         />
       </form>
-      <button onClick={addingOccupant} className={styles.addBtn}>
+      <button onClick={addingOccupant} className={addOccupant ? styles.hidden : styles.addBtn}>
         + Add Another Occupant
       </button>
       <div>

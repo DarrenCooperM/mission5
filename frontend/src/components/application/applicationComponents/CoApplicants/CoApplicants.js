@@ -40,7 +40,10 @@ export default function CoApplicants() {
           placeholder="Email"
         />
       </form>
-      <button onClick={addingApplicant} className={styles.addBtn}>
+      <button
+        onClick={addingApplicant}
+        className={addApplicant ? styles.hidden : styles.addBtn}
+      >
         <AiOutlinePlus /> Add Another Applicant
       </button>
       <div>

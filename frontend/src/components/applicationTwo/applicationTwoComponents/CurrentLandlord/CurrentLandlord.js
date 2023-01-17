@@ -4,7 +4,7 @@ import styles from "../../../styles/applicationTwo/applicationTwoComponents/Curr
 export default function CurrentLandlord() {
   return (
     <div className={styles.currentLandlordContainer}>
-      <h3 className={styles.landlordTitle}>Previous Landlord References</h3>
+      <h3 className={styles.landlordTitle}>Current Landlord</h3>
       <p className={styles.landlordSubTitle}>
         The purpose of collecting this information is to conduct a reference
         check to determine your suitability as a tenant
