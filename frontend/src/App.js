@@ -4,6 +4,7 @@ import Home from "./components/pages/Home";
 import Contact from "./components/pages/Contact";
 import MissionTask from "./components/pages/MissionTask";
 import Application from "./components/pages/Application";
+import ApplicationPageTwo from "./components/pages/ApplicationPageTwo";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Mission-Task" element={<MissionTask />} />
         <Route path="/Application" element={<Application />} />
+        <Route path="/Application-page-two" element={<ApplicationPageTwo />} />
       </Routes>
     </div>
   );

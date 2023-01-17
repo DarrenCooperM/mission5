@@ -28,7 +28,7 @@ export default function ApplicationContent() {
         <button
           className={styles.nextBtn}
           onClick={() => {
-            navigate("/Contact");
+            navigate("/Application-page-two");
           }}
         >
           Next
