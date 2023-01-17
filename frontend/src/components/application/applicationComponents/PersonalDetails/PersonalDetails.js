@@ -12,6 +12,7 @@ export default function PersonalDetails() {
           name="firstname"
           autoComplete="off"
           placeholder="First Name"
+          required="required"
         />
         <input
           type="text"
@@ -19,6 +20,7 @@ export default function PersonalDetails() {
           name="lastname"
           autoComplete="off"
           placeholder="Last Name"
+          required="required"
         />
         <input
           type="number"
@@ -26,6 +28,7 @@ export default function PersonalDetails() {
           name="mobile"
           autoComplete="off"
           placeholder="Mobile"
+          required="required"
         />
         <br />
         <input
@@ -34,6 +37,7 @@ export default function PersonalDetails() {
           name="email"
           autoComplete="off"
           placeholder="Email"
+          required="required"
         />
       </form>
     </div>

@@ -10,6 +10,7 @@ export default function NonTenantOccupants() {
     setAddOccupant(true);
   };
   return (
+    // STYLES IN COAPPLICANTS.MODULE.CSS
     <div className={styles.nonTenantContainer}>
       <h3 className={styles.CoAppTitle}>Other non-tenant occupants</h3>
       <p className={styles.CoAppSubTitle}>
@@ -24,7 +25,10 @@ export default function NonTenantOccupants() {
           placeholder="Full Name"
         />
       </form>
-      <button onClick={addingOccupant} className={addOccupant ? styles.hidden : styles.addBtn}>
+      <button
+        onClick={addingOccupant}
+        className={addOccupant ? styles.hidden : styles.addBtn}
+      >
         + Add Another Occupant
       </button>
       <div>

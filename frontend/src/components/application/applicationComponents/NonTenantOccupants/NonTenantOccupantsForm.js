@@ -7,6 +7,7 @@ export default function NonTenantOccupantsForm({ setAddOccupant }) {
     setAddOccupant(false);
   };
   return (
+    // STYLES IN COAPPLICANTS.MODULE.CSS
     <div className={styles.nonTenantContainerForm}>
       <h3 className={styles.nonTenantFormTitle}>Additional occupant</h3>
       <form className={styles.formData}>

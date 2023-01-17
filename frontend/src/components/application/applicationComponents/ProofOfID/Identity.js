@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useRef } from "react";
+// NORMAL CSS FILE ATTACHED AS MODULES WEREN'T DOING WHAT I WANTED IT TO DO
 import "../../../styles/application/applicationComponents/Identity.css";
 import { AiOutlineCloudUpload } from "@react-icons/all-files/ai/AiOutlineCloudUpload";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import styles from "../styles/application/ApplicationContent.module.css";
 import PersonalDetails from "./applicationComponents/PersonalDetails/PersonalDetails";
 import Identity from "./applicationComponents/ProofOfID/Identity";
@@ -9,7 +9,8 @@ import OtherForms from "./applicationComponents/OtherForms/OtherForms";
 import { ProgressBar } from "./ProgressBar";
 
 export default function ApplicationContent() {
-  let navigate = useNavigate();
+  // let navigate = useNavigate();
+
   return (
     <>
       <ProgressBar />
@@ -20,22 +21,26 @@ export default function ApplicationContent() {
         <NonTenantOccupants />
         <OtherForms />
         <div className={styles.btnContainer}>
-          <button
-            className={styles.backBtn}
-            onClick={() => {
-              navigate("/");
-            }}
-          >
-            Back
-          </button>
-          <button
-            className={styles.nextBtn}
-            onClick={() => {
-              navigate("/Application-page-two");
-            }}
-          >
-            Next
-          </button>
+          <a href="/">
+            <button
+              className={styles.backBtn}
+              // onClick={() => {
+              //   navigate("/");
+              // }}
+            >
+              Back
+            </button>{" "}
+          </a>
+          <a href="/Application-page-two">
+            <button
+              className={styles.nextBtn}
+              // onClick={() => {
+              //   navigate("/Application-page-two");
+              // }}
+            >
+              Next
+            </button>
+          </a>
         </div>
       </div>
     </>
