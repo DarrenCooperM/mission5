@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../../styles/applicationTwo/applicationTwoComponents/Parking.module.css";
+import styles from "../../../styles/application-landlord/applicationTwoComponents/Parking.module.css";
 import { useState } from "react";
 import { AiOutlinePlus } from "@react-icons/all-files/ai/AiOutlinePlus";
 import NumberPlate from "./NumberPlate";

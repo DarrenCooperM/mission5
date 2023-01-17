@@ -3,10 +3,10 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
 import Contact from "./components/pages/Contact";
 import MissionTask from "./components/pages/MissionTask";
-import Application from "./components/pages/Application";
-import ApplicationPageTwo from "./components/pages/ApplicationPageTwo";
-import ApplicationPageThree from "./components/pages/ApplicationPageThree";
-import ApplicationPageFour from "./components/pages/ApplicationPageFour";
+import ApplicationPersonal from "./components/pages/ApplicationPages/ApplicationPersonal";
+import ApplicationLandlord from "./components/pages/ApplicationPages/ApplicationLandlord";
+import ApplicationPrivacy from "./components/pages/ApplicationPages/ApplicationPrivacy";
+import ApplicationSubmission from "./components/pages/ApplicationPages/ApplicationSubmission";
 
 function App() {
   return (
@@ -15,15 +15,21 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Mission-Task" element={<MissionTask />} />
-        <Route path="/Application" element={<Application />} />
-        <Route path="/Application-Landlord" element={<ApplicationPageTwo />} />
+        <Route
+          path="/Application-Personal-Details"
+          element={<ApplicationPersonal />}
+        />
+        <Route
+          path="/Application-Landlord-Details"
+          element={<ApplicationLandlord />}
+        />
         <Route
           path="/Application-Privacy-Statements"
-          element={<ApplicationPageThree />}
+          element={<ApplicationPrivacy />}
         />
         <Route
           path="/Application-Submission-Confirmation"
-          element={<ApplicationPageFour />}
+          element={<ApplicationSubmission />}
         />
       </Routes>
     </div>

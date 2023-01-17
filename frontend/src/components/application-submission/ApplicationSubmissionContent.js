@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "../styles/applicationThree/ApplicationSubmission.module.css";
+import styles from "../styles/application-submission/ApplicationSubmission.module.css";
 
-export default function ApplicationFourContent() {
+export default function ApplicationSubmissionContent() {
   return (
     <div className={styles.submissionContainer}>
       {" "}

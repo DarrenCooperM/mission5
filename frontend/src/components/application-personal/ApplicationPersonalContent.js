@@ -1,14 +1,14 @@
 import React from "react";
 // import { useNavigate } from "react-router-dom";
 import styles from "../styles/application/ApplicationContent.module.css";
-import PersonalDetails from "./applicationComponents/PersonalDetails/PersonalDetails";
-import Identity from "./applicationComponents/ProofOfID/Identity";
-import CoApplicants from "./applicationComponents/CoApplicants/CoApplicants";
-import NonTenantOccupants from "./applicationComponents/NonTenantOccupants/NonTenantOccupants";
-import OtherForms from "./applicationComponents/OtherForms/OtherForms";
+import PersonalDetails from "./applicationPersonalComponents/PersonalDetails/PersonalDetails";
+import Identity from "./applicationPersonalComponents/ProofOfID/Identity";
+import CoApplicants from "./applicationPersonalComponents/CoApplicants/CoApplicants";
+import NonTenantOccupants from "./applicationPersonalComponents/NonTenantOccupants/NonTenantOccupants";
+import OtherForms from "./applicationPersonalComponents/OtherForms/OtherForms";
 import { ProgressBar } from "./ProgressBar";
 
-export default function ApplicationContent() {
+export default function ApplicationPersonalContent() {
   // let navigate = useNavigate();
 
   return (
@@ -31,7 +31,7 @@ export default function ApplicationContent() {
               Back
             </button>{" "}
           </a>
-          <a href="/Application-Landlord">
+          <a href="/Application-Landlord-Details">
             <button
               className={styles.nextBtn}
               // onClick={() => {

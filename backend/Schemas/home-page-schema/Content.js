@@ -1,9 +1,11 @@
 const mongoose = require("mongoose");
 
+// Mongoose Schema defines the structure of the enquiry model.
+// Schemas allow for CRUD operations to be performed
 const ContentSchema = mongoose.Schema({
   title: {
     type: String,
-    required: true,
+    required: true, // this means that when a new instance of the model is created, it is mandatory to have a value for this field
   },
   subtitle: {
     type: String,
@@ -14,4 +16,5 @@ const ContentSchema = mongoose.Schema({
   },
 });
 
+// arguments = exporting model name + and schema
 module.exports = mongoose.model("Content", ContentSchema);

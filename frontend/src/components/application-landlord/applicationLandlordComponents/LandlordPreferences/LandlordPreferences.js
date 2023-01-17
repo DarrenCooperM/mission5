@@ -1,21 +1,22 @@
 import React from "react";
-import styles from "../../../styles/applicationTwo/applicationTwoComponents/CurrentLandlord.module.css";
-import OtherReferencesForm from "./OtherReferencesForm";
+import styles from "../../../styles/application-landlord/applicationTwoComponents/CurrentLandlord.module.css";
+import LandlordPreferencesForm from "./LandlordPreferencesForm";
 import { useState } from "react";
 import { AiOutlinePlus } from "@react-icons/all-files/ai/AiOutlinePlus";
 
-export default function OtherReference() {
-  const [addRef, setAddRef] = useState(false);
+export default function LandlordPreferences() {
+  const [addLandlord, setAddLandlord] = useState(false);
 
-  const addingRef = () => {
-    setAddRef(true);
+  const addingLandlord = () => {
+    setAddLandlord(true);
   };
+
   return (
     <div className={styles.currentLandlordContainer}>
-      <h3 className={styles.landlordTitle}>Other References</h3>
+      <h3 className={styles.landlordTitle}>Landlord References</h3>
       <p className={styles.landlordSubTitle}>
-        Other references e.g. manager, supervisor, case manager, or other
-        professional references
+        The purpose of collecting this information is to conduct a reference
+        check to determine your suitability as a tenant
       </p>
       <form className={styles.formData}>
         <input
@@ -38,13 +39,15 @@ export default function OtherReference() {
         />
       </form>
       <button
-        onClick={addingRef}
-        className={addRef ? styles.hidden : styles.addBtn}
+        onClick={addingLandlord}
+        className={addLandlord ? styles.hidden : styles.addBtn}
       >
         <AiOutlinePlus />
-        Add Another Reference
+        Add Another Landlord Reference
       </button>
-      {addRef && <OtherReferencesForm setAddRef={setAddRef} />}
+      {addLandlord && (
+        <LandlordPreferencesForm setAddLandlord={setAddLandlord} />
+      )}
     </div>
   );
 }

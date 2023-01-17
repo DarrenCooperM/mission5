@@ -100,7 +100,7 @@ export default function HomeNav() {
                       <BsArrowRight />
                       <span className={styles.dropdownText}>Decluttering </span>
                     </li>
-                    <Link to="/Application">
+                    <Link to="/Application-Personal-Details">
                       <li>
                         {" "}
                         <BsArrowRight />

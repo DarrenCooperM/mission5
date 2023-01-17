@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../../styles/applicationTwo/applicationTwoComponents/CurrentLandlord.module.css";
+import styles from "../../../styles/application-landlord/applicationTwoComponents/CurrentLandlord.module.css";
 import { AiOutlineMinus } from "@react-icons/all-files/ai/AiOutlineMinus";
 
 export default function OtherReferencesForm({ setAddRef }) {

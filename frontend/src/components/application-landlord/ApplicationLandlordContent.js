@@ -1,24 +1,26 @@
 import React from "react";
 // import { useNavigate } from "react-router-dom";
-import styles from "../styles/applicationTwo/ApplicationContentTwo.module.css";
-import CurrentLandlord from "./applicationTwoComponents/CurrentLandlord/CurrentLandlord";
-import LandlordPreferences from "./applicationTwoComponents/LandlordPreferences/LandlordPreferences";
-import OtherReference from "./applicationTwoComponents/OtherReferences/OtherReference";
-import Parking from "./applicationTwoComponents/Parking/Parking";
+import styles from "../styles/application-landlord/ApplicationContentTwo.module.css";
+import CurrentLandlord from "./applicationLandlordComponents/CurrentLandlord/CurrentLandlord";
+import LandlordPreferences from "./applicationLandlordComponents/LandlordPreferences/LandlordPreferences";
+import OtherReference from "./applicationLandlordComponents/OtherReferences/OtherReference";
+import Parking from "./applicationLandlordComponents/Parking/Parking";
 import { ProgressBar } from "../application-personal/ProgressBar";
-export default function ApplicationTwoContent() {
+export default function ApplicationLandlordContent() {
   // let navigate = useNavigate();
-  const applicationTwo = true;
+
+  // updating the state of the progress bar
+  const applicationLandlord = true;
   return (
     <>
-      <ProgressBar applicationTwo={applicationTwo} />
+      <ProgressBar applicationLandlord={applicationLandlord} />
       <div className={styles.applicationTwoContainer}>
         <CurrentLandlord />
         <LandlordPreferences />
         <OtherReference />
         <Parking />
         <div className={styles.btnContainer}>
-          <a href="/Application">
+          <a href="/Application-Personal-Details">
             <button
               className={styles.backBtn}
               // onClick={() => {

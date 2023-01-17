@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../../styles/applicationTwo/applicationTwoComponents/CurrentLandlord.module.css";
+import styles from "../../../styles/application-landlord/applicationTwoComponents/CurrentLandlord.module.css";
 
 export default function CurrentLandlord() {
   return (

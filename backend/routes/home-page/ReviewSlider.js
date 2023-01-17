@@ -6,6 +6,9 @@ const router = express.Router();
 const Review = require("../../Schemas/home-page-schema/Review");
 
 //reviews slider POST
+// ASYNC -- allows other code to continue running without waiting for it to finish
+// allows app to run smoothly without any freezes or lag
+// async function - returns a promise that can be handled later
 router.post("/ReviewsData", async (req, res) => {
   const Reviews = new Review({
     id: req.body.id,

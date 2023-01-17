@@ -1,25 +1,27 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import styles from "../styles/applicationTwo/ApplicationContentTwo.module.css";
+import styles from "../styles/application-landlord/ApplicationContentTwo.module.css";
 import { ProgressBar } from "../application-personal/ProgressBar";
 
-export default function ApplicationThreeContent() {
+export default function ApplicationPrivacyContent() {
   let navigate = useNavigate();
-  const applicationTwo = true;
-  const applicationThree = true;
+
+  // updating state of progress bar
+  const applicationLandlord = true;
+  const applicationPrivacy = true;
 
   return (
     <>
       <ProgressBar
-        applicationThree={applicationThree}
-        applicationTwo={applicationTwo}
+        applicationPrivacy={applicationPrivacy}
+        applicationLandlord={applicationLandlord}
       />
       <div className={styles.applicationThreeContainer}>
         <div className={styles.btnContainer}>
           <button
             className={styles.backBtn}
             onClick={() => {
-              navigate("/Application-Landlord");
+              navigate("/Application-Landlord-Details");
             }}
           >
             Back
