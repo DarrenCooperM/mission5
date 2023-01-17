@@ -3,12 +3,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  margin: 0 0 60px 0;
 }
 
 .circle {
-  height: 30px;
-  width: 30px;
-  margin: 0 50px 0 50px;
+  height: 60px;
+  width: 60px;
+  margin: 0 100px 0 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,9 +33,9 @@
 }
 
 .circleFilled {
-  height: 30px;
-  width: 30px;
-  margin: 0 50px 0 50px;
+  height: 60px;
+  width: 60px;
+  margin: 0 100px 0 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,9 +45,16 @@
   color: var(--clr-white);
 }
 
+/* .lineFilled {
+  z-index: -2;
+  position: absolute;
+  width: 500px;
+  border-bottom: 2px solid var(--clr-red-dark);
+} */
+
 .solidLine {
   z-index: -1;
   position: absolute;
-  width: 15%;
+  width: 500px;
   border-bottom: 2px solid var(--clr-red-dark);
 }

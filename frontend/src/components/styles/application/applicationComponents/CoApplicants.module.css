@@ -1,11 +1,10 @@
 .CoApplicantsContainer {
   margin: 40px 0 20px 0;
-  max-width: 30%;
+  max-width: 50%;
 }
 
-.nonTenantContainer {
-  max-width: 60%;
-  margin: 40px 0 20px 0;
+.formData {
+  width: 70%;
 }
 
 .nonTenantContainerForm {
@@ -25,18 +24,23 @@
   margin: 20px 20px 20px 0px;
   padding: 5px 5px 5px 5px;
   border-radius: 8px;
-  width: 200px;
+  width: 250px;
 }
 
 .inputEmail {
   margin: 20px 20px 20px 0px;
   padding: 5px 5px 5px 5px;
   border-radius: 8px;
-  width: 420px;
+  width: 520px;
 }
 
 .CoApplicantFormTitle {
   font-size: 20px;
+}
+
+.nonTenantContainer {
+  max-width: 60%;
+  margin: 40px 0 20px 0;
 }
 
 .nonTenantFormTitle {

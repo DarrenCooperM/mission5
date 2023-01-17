@@ -23,6 +23,7 @@ export default function NonTenantOccupants() {
           name="fullname"
           className={styles.inputData}
           placeholder="Full Name"
+          autoComplete="off"
         />
       </form>
       <button

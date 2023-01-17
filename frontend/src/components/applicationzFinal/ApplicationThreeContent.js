@@ -27,7 +27,7 @@ export default function ApplicationThreeContent() {
           <button
             className={styles.nextBtn}
             onClick={() => {
-              navigate("/Application-Page-Three");
+              navigate("/Contact");
             }}
           >
             Next

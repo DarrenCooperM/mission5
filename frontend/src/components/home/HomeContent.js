@@ -66,7 +66,7 @@ export default function HomeContent() {
           <p className={styles.contentText}>
             {displayContent && displayContent[1].text}
           </p>
-          <button className={styles.findAgent}>Find An Agent</button>
+          <button className={styles.findAgent}>Learn more</button>
         </div>
         <img
           className={styles.contentImages}

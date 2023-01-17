@@ -28,7 +28,7 @@ export default function ApplicationTwoContent() {
               Back
             </button>{" "}
           </a>
-          <a href="/Application-page-two">
+          <a href="/Application-page-three">
             <button
               className={styles.nextBtn}
               // onClick={() => {

@@ -3,6 +3,10 @@
   max-width: 50%;
 }
 
+.formData {
+  width: 60%;
+}
+
 .landlordTitle {
   font-size: 30px;
 }

@@ -16,6 +16,7 @@ export default function NonTenantOccupantsForm({ setAddOccupant }) {
           name="fullname"
           className={styles.inputData}
           placeholder="Full Name"
+          autoComplete="off"
         />
       </form>
       <button onClick={() => cancelOccupant()} className={styles.addBtn}>
