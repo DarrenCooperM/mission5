@@ -3,10 +3,10 @@ const res = require("express/lib/response");
 const router = express.Router();
 
 // importing mongodb schema
-const Content = require("../Schemas/Content");
+const Content = require("../../Schemas/home-page-schema/Content");
 
 // get content info from db
-router.get("/contentinfo", async (req, res) => {
+router.get("/content-info", async (req, res) => {
   try {
     // find() -> get all the data
     const getContentInfo = await Content.find();

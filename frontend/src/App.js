@@ -6,6 +6,7 @@ import MissionTask from "./components/pages/MissionTask";
 import Application from "./components/pages/Application";
 import ApplicationPageTwo from "./components/pages/ApplicationPageTwo";
 import ApplicationPageThree from "./components/pages/ApplicationPageThree";
+import ApplicationPageFour from "./components/pages/ApplicationPageFour";
 
 function App() {
   return (
@@ -15,10 +16,14 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Mission-Task" element={<MissionTask />} />
         <Route path="/Application" element={<Application />} />
-        <Route path="/Application-page-two" element={<ApplicationPageTwo />} />
+        <Route path="/Application-Landlord" element={<ApplicationPageTwo />} />
         <Route
-          path="/Application-page-three"
+          path="/Application-Privacy-Statements"
           element={<ApplicationPageThree />}
+        />
+        <Route
+          path="/Application-Submission-Confirmation"
+          element={<ApplicationPageFour />}
         />
       </Routes>
     </div>

@@ -1,9 +1,9 @@
 import Navbar from "../home/HomeNav";
-import ApplicationHero from "../application/ApplicationHero";
-import ApplicationContent from "../application/ApplicationContent";
+import ApplicationHero from "../application-personal/ApplicationHero";
+import ApplicationContent from "../application-personal/ApplicationContent";
 import Footer from "../home/HomeFooter";
 
-function Application() {
+export default function Application() {
   return (
     <>
       <Navbar />
@@ -13,5 +13,3 @@ function Application() {
     </>
   );
 }
-
-export default Application;

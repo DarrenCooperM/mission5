@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "../styles/applicationTwo/ApplicationContentTwo.module.css";
-import { ProgressBar } from "../application/ProgressBar";
+import { ProgressBar } from "../application-personal/ProgressBar";
 
 export default function ApplicationThreeContent() {
   let navigate = useNavigate();
@@ -19,7 +19,7 @@ export default function ApplicationThreeContent() {
           <button
             className={styles.backBtn}
             onClick={() => {
-              navigate("/Application-Page-Two");
+              navigate("/Application-Landlord");
             }}
           >
             Back
@@ -27,10 +27,10 @@ export default function ApplicationThreeContent() {
           <button
             className={styles.nextBtn}
             onClick={() => {
-              navigate("/Contact");
+              navigate("/Application-Submission-Confirmation");
             }}
           >
-            Next
+            Submit Application
           </button>
         </div>
       </div>

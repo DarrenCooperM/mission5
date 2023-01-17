@@ -10,7 +10,7 @@ export default function ContactContent() {
   const submitResultDiv = document.getElementById("submitResult");
   // getting the image from db
   useEffect(() => {
-    fetch("http://localhost:7070/contentsImg/content-images")
+    fetch("http://localhost:7070/home-content/home-content-images")
       .then((res) => res.json())
       .then((imageData) => {
         console.log(imageData);
@@ -41,7 +41,7 @@ export default function ContactContent() {
     console.log(userInput);
 
     axios
-      .post("http://localhost:7070/message/user-message", userInput)
+      .post("http://localhost:7070/enquiry/enquiry-message", userInput)
       .then((data) => {
         console.log("Success", data);
         submitResultDiv.innerHTML =

@@ -3,7 +3,7 @@ const res = require("express/lib/response");
 const router = express.Router();
 
 // importing mongodb schema
-const Greeting = require("../Schemas/Greeting");
+const Greeting = require("../../Schemas/mission-task-schema/Greeting");
 
 // POST message endpoint -- posting email to database
 router.post("/Greeting", async (req, res) => {

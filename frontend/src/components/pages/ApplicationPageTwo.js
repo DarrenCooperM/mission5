@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../home/HomeNav";
-import ApplicationHero from "../application/ApplicationHero";
-import ApplicationTwoContent from "../applicationTwo/ApplicationTwoContent";
+import ApplicationHero from "../application-personal/ApplicationHero";
+import ApplicationTwoContent from "../application-landlord/ApplicationTwoContent";
 import Footer from "../home/HomeFooter";
 
 export default function ApplicationPageTwo() {

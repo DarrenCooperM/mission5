@@ -5,7 +5,7 @@ import CurrentLandlord from "./applicationTwoComponents/CurrentLandlord/CurrentL
 import LandlordPreferences from "./applicationTwoComponents/LandlordPreferences/LandlordPreferences";
 import OtherReference from "./applicationTwoComponents/OtherReferences/OtherReference";
 import Parking from "./applicationTwoComponents/Parking/Parking";
-import { ProgressBar } from "../application/ProgressBar";
+import { ProgressBar } from "../application-personal/ProgressBar";
 export default function ApplicationTwoContent() {
   // let navigate = useNavigate();
   const applicationTwo = true;
@@ -28,7 +28,7 @@ export default function ApplicationTwoContent() {
               Back
             </button>{" "}
           </a>
-          <a href="/Application-page-three">
+          <a href="/Application-Privacy-Statements">
             <button
               className={styles.nextBtn}
               // onClick={() => {

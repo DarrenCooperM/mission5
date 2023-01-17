@@ -14,7 +14,7 @@ export default function HomeContent() {
 
   // getting text content from db
   useEffect(() => {
-    fetch("http://localhost:7070/content/contentinfo")
+    fetch("http://localhost:7070/home-content/content-info")
       .then((res) => res.json())
       .then((resultsData) => {
         console.log(resultsData);
@@ -24,7 +24,7 @@ export default function HomeContent() {
 
   // getting the image from db
   useEffect(() => {
-    fetch("http://localhost:7070/contentsImg/content-images")
+    fetch("http://localhost:7070/home-content/home-content-images")
       .then((res) => res.json())
       .then((imageData) => {
         console.log(imageData);

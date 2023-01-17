@@ -10,21 +10,21 @@ app.use(express.json());
 app.use(cors());
 // import routes
 const postRouter = require("./routes/posts");
-const contentRouter = require("./routes/contents");
-const subscribeRouter = require("./routes/subscription");
-const imageRouter = require("./routes/contentsImg");
-const greetingRouter = require("./routes/greeting");
-const messageRouter = require("./routes/contactsubmit");
+const contentRouter = require("./routes/home-page/contents");
+const subscribeRouter = require("./routes/home-page/subscription");
+const imageRouter = require("./routes/home-page/contentsImg");
+const greetingRouter = require("./routes/mission-task/greeting");
+const messageRouter = require("./routes/contact-page/contactenquiry");
 
 // middlewares
 // app.use(bodyParser.json());
 // importing endpoints from routes
 app.use("/posts", postRouter);
-app.use("/content", contentRouter);
+app.use("/home-content", contentRouter);
 app.use("/subscription", subscribeRouter);
-app.use("/contentsImg", imageRouter);
+app.use("/home-content", imageRouter);
 app.use("/greeting", greetingRouter);
-app.use("/message", messageRouter);
+app.use("/enquiry", messageRouter);
 
 app.get("/", (req, res) => {
   res.send("Hello From Darren !");

@@ -31,7 +31,7 @@ export default function ApplicationContent() {
               Back
             </button>{" "}
           </a>
-          <a href="/Application-page-two">
+          <a href="/Application-Landlord">
             <button
               className={styles.nextBtn}
               // onClick={() => {
