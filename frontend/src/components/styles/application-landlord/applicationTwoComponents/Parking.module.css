@@ -38,6 +38,17 @@
   font-size: 20px;
 }
 
+.petInputContainer {
+  width: 30%;
+}
+
+.inputPetDescription {
+  /* height: 125px; */
+  padding: 5px 0 125px 5px;
+  border-radius: 8px;
+  width: 425px;
+}
+
 .addBtn {
   background-color: transparent;
   border: none;

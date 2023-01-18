@@ -5,7 +5,11 @@ import CurrentLandlord from "./applicationLandlordComponents/CurrentLandlord/Cur
 import LandlordPreferences from "./applicationLandlordComponents/LandlordPreferences/LandlordPreferences";
 import OtherReference from "./applicationLandlordComponents/OtherReferences/OtherReference";
 import Parking from "./applicationLandlordComponents/Parking/Parking";
+import Pets from "./applicationLandlordComponents/Pets/Pets";
+import Smoking from "./applicationLandlordComponents/Smoking/Smoking";
+import AdditionalNotes from "./applicationLandlordComponents/AdditionalNotes/AdditionalNotes";
 import { ProgressBar } from "../application-personal/ProgressBar";
+
 export default function ApplicationLandlordContent() {
   // let navigate = useNavigate();
 
@@ -19,6 +23,9 @@ export default function ApplicationLandlordContent() {
         <LandlordPreferences />
         <OtherReference />
         <Parking />
+        <Pets />
+        <Smoking />
+        <AdditionalNotes />
         <div className={styles.btnContainer}>
           <a href="/Application-Personal-Details">
             <button
