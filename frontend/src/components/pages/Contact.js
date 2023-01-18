@@ -1,7 +1,7 @@
 import Navbar from "../home/HomeNav";
 import ContactHero from "../contact/ContactHero";
 import ContactContent from "../contact/ContactContent";
-// import Footer from "../home/HomeFooter";
+import Footer from "../home/HomeFooter";
 
 function Contact() {
   return (
@@ -9,7 +9,7 @@ function Contact() {
       <Navbar />
       <ContactHero />
       <ContactContent />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

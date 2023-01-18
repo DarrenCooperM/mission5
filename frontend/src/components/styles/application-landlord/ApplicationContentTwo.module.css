@@ -1,0 +1,47 @@
+.applicationTwoContainer {
+  margin-left: 10%;
+  margin-bottom: 5%;
+}
+
+.btnContainer {
+  width: 100%;
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backBtn {
+  margin: 20px;
+  padding: 15px 70px 15px 70px;
+
+  font-size: 20px;
+  color: var(--clr-black);
+  font-weight: 600;
+
+  background-color: transparent;
+  border: 2px solid var(--clr-grey-8);
+  border-radius: 8px;
+}
+
+.backBtn:hover {
+  border: 2px solid var(--clr-red-dark);
+}
+
+.nextBtn {
+  margin: 20px;
+  padding: 15px 120px 15px 120px;
+
+  font-size: 20px;
+  color: var(--clr-white);
+  font-weight: 600;
+
+  background-color: var(--clr-red-dark);
+  border: none;
+  border-radius: 8px;
+}
+
+.nextBtn:hover {
+  background-color: var(--clr-grey-8);
+  color: var(--clr-red-dark);
+}

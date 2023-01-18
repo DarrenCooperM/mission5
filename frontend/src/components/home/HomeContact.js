@@ -21,7 +21,7 @@ export default function HomeContact() {
     console.log(userInput);
 
     axios
-      .post("http://localhost:7070/subscription/subscribe", userInput)
+      .post("http://localhost:7070/subscription/email", userInput)
       .then((data) => {
         // alert("Login Successful");
         console.log("Success:", data);

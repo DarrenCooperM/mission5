@@ -12,6 +12,7 @@
 
   font-family: "Open Sans", sans-serif;
   font-size: 0.8rem;
+  z-index: 39;
 
   /* position: fixed;
   z-index: 4000; */
@@ -29,13 +30,65 @@
   list-style: none;
 }
 
-.navbarLinks li a {
+.navbarLinks button {
   text-decoration: none;
+  border: none;
   color: #000;
   font-weight: 700;
   font-size: 15px;
   padding: 0px 30px;
+
+  /* cursor: pointer; */
 }
+
+.FaArrow {
+  padding-left: 5px;
+}
+
+.slarrow {
+  padding-left: 5px;
+}
+
+.dropdownMenu {
+  position: absolute;
+  backdrop-filter: blur(8px);
+  z-index: 40;
+  /* padding-top: 20px; */
+
+  height: auto;
+  width: 400px;
+  padding-top: 25px;
+
+  background-color: #f1f1f1;
+}
+
+.dropdownMenu li {
+  list-style: none;
+  text-align: left;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+
+  color: var(--clr-black);
+  text-decoration: none;
+}
+
+.dropdownMenu li:hover {
+  text-decoration: underline;
+}
+
+.dropdownContainer {
+  margin-top: 30px;
+}
+
+.dropdownText {
+  padding-left: 5px;
+}
+
+/* .dropdownList {
+  padding: 20px;
+} */
 
 .searchContainer {
   position: relative;

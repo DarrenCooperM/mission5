@@ -1,0 +1,39 @@
+.currentLandlordContainer {
+  margin: 40px 0 20px 0;
+  max-width: 50%;
+}
+
+.formData {
+  width: 60%;
+}
+
+.landlordTitle {
+  font-size: 30px;
+}
+
+.landlordSubTitle {
+  font-size: 12px;
+}
+
+.inputData {
+  margin: 7px 7px 7px 0px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 8px;
+  width: 420px;
+}
+
+.landlordFormTitle {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.addBtn {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: var(--clr-red-dark);
+}
+
+.hidden {
+  display: none;
+}
