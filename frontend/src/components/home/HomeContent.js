@@ -89,7 +89,9 @@ export default function HomeContent() {
           <p className={styles.contentText}>
             {displayContent && displayContent[2].text}
           </p>
-          <button className={styles.findRentals}>Find Rentals</button>
+          <a href="/Rentals">
+            <button className={styles.findRentals}>Find Rentals</button>
+          </a>
         </div>
       </div>
     </div>

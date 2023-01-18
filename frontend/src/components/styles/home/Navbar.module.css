@@ -84,6 +84,7 @@
 
 .dropdownText {
   padding-left: 5px;
+  text-decoration: none;
 }
 
 /* .dropdownList {

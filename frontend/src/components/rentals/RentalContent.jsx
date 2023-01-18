@@ -6,7 +6,7 @@ import bathImg from "../icons/bath.png";
 import mailImg from "../icons/mail.png";
 
 
-export default function RentalContent() {
+export default function RentalContent({ setOpenModal }) {
     // text content state
     const [displayContent, setDisplayContent] = useState("");
     // image state
@@ -46,7 +46,11 @@ export default function RentalContent() {
           <div className="card bg-light shadow-sm">
             <div className={styles.rentalImage}>  
               <img  className="card-img-top" width="100%" height="225" src={imageURL && imageURL[0].url} alt="rental property" />
-              <i class={styles.iconMail}><img src={mailImg} alt=""/></i>
+              <i           
+              onClick={() => {
+                    setOpenModal(true);
+                  }} 
+                  class={styles.iconMail}><img src={mailImg} alt=""/></i>
             </div>
         
             <div className="card-body">
