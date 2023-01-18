@@ -101,7 +101,8 @@ export default function RentalContent() {
                 </div> 
                 <div className="col-3">
                   <div className="btn-group">
-                    <button type="button" className={styles.btnRed}>View More</button>
+                    <a href="/Application-Personal-Details">
+                    <button type="button" className={styles.btnRed}>View More</button></a>
                   </div>
                 </div>   
               </div>

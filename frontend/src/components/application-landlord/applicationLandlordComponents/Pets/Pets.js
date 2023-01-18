@@ -64,6 +64,7 @@ export default function Pets() {
           className={styles.inputData}
           placeholder="Age"
         />
+        <br />
         <input
           type="text"
           name="pet desciption"
