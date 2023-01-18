@@ -85,8 +85,12 @@
 .rightContentMsgBox {
   height: 400px;
   width: 600px;
+  padding-left: 5px;
+  padding-top: 5px;
 
   background-color: transparent;
+
+  border: 2px solid var(--clr-black);
 }
 
 .sendBtnContainer {

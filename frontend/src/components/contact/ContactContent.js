@@ -74,13 +74,14 @@ export default function ContactContent() {
           </a>
         </div>
         <div className={styles.rightContentContainer}>
-          <div className={styles.rightContentInputBoxContainer}>
+          <form className={styles.rightContentInputBoxContainer}>
             <input
               className={styles.rightContentInputBox}
               type="text"
               name="name"
               autoComplete="off"
               placeholder="Your Name"
+              required
               onChange={handleUserInput}
             />
             <input
@@ -89,6 +90,7 @@ export default function ContactContent() {
               name="email"
               autoComplete="off"
               placeholder="Your Email"
+              required="required"
               onChange={handleUserInput}
             />
             <input
@@ -96,22 +98,29 @@ export default function ContactContent() {
               type="number"
               name="number"
               autoComplete="off"
+              required="required"
               placeholder="Phone Number"
               onChange={handleUserInput}
             />
-          </div>
+          </form>
           <div className={styles.rightContentMsgContainer}>
             <h4 className={styles.rightContentMsgHeader}>Message</h4>
-            <input
+            <textarea
               className={styles.rightContentMsgBox}
               type="text"
               name="message"
               autoComplete="off"
+              placeholder="Write your message here..."
+              required="required"
               onChange={handleUserInput}
             />
             <div id="submitResult" className={styles.submitResult}></div>
             <div className={styles.sendBtnContainer}>
-              <button onClick={handleSubmit} className={styles.sendBtn}>
+              <button
+                type="submit"
+                onClick={handleSubmit}
+                className={styles.sendBtn}
+              >
                 Send
               </button>
             </div>
