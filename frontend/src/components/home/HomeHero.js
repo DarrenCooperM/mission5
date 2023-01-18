@@ -16,7 +16,7 @@ export default function HomeHero() {
         </h1>
         <div className={styles.homeTitleLinks}>
           <button className={styles.agentLink}>Find an Agent</button>
-          <button className={styles.rentalsLink}>Find Rentals</button>
+          <a href="/Rentals"><button className={styles.rentalsLink} >Find Rentals</button></a>
         </div>
       </div>
     </div>
