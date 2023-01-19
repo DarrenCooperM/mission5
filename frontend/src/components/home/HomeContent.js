@@ -7,20 +7,22 @@ import styles from "../styles/home/Content.module.css";
 import { useState, useEffect } from "react";
 
 export default function HomeContent() {
-  // text content state
+  // text content hook
   const [displayContent, setDisplayContent] = useState("");
-  // image state
+  // image hook
   const [imageURL, setImageURL] = useState("");
 
   // getting text content from db
+  // useEffect hook - allows you to synchronize a component with an external system
+  // used here to fetch data from this endpoint
   useEffect(() => {
     fetch("http://localhost:7070/home-content/content-info")
       .then((res) => res.json())
       .then((resultsData) => {
         console.log(resultsData);
-        setDisplayContent(resultsData);
+        setDisplayContent(resultsData); // set the state of displayContent with the data received (resultsData)
       });
-  }, []);
+  }, []); // empty dependency means this function will execute once
 
   // getting the image from db
   useEffect(() => {
