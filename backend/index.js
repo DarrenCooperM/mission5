@@ -8,6 +8,10 @@ const cors = require("cors"); // We use this to accept HTTP requests from a spec
 // const bodyParser = require("body-parser");
 app.use(express.json());
 app.use(cors());
+
+// Import PORT from env
+const PORT = process.env.PORT;
+
 // import routes
 const postRouter = require("./routes/posts");
 const contentRouter = require("./routes/home-page/contents");
@@ -37,6 +41,8 @@ mongoose.connect(process.env.DB_CONNECTION, () => {
   console.log("connected to database");
 });
 
-app.listen(7070, () => {
-  console.log(`listening on port 7070`);
+app.listen(PORT, (err) => {
+  if (err) {
+    console.log(err);
+  } else console.log(`Listening to http://localhost:${PORT}`);
 });

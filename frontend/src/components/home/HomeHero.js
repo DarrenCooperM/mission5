@@ -10,13 +10,15 @@ export default function HomeHero() {
       {/* <img className={styles.heroImage} src={heroImage} alt="heroImage" /> */}
       <div className={styles.banner}></div>
       <div className={styles.heroTitles}>
-        <h1 className={styles.heroTitle}>Solutions for</h1>
-        <h1 className={styles.heroTitleTwo}>
-          Investors, Landlords and Renters
+        <h1 className={styles.heroTitle}>
+          <span>Solutions for</span> <br></br>
+          <span> Investors, Landlords and Renters</span>
         </h1>
         <div className={styles.homeTitleLinks}>
           <button className={styles.agentLink}>Find an Agent</button>
-          <a href="/Rentals"><button className={styles.rentalsLink} >Find Rentals</button></a>
+          <a href="/Rentals">
+            <button className={styles.rentalsLink}>Find Rentals</button>
+          </a>
         </div>
       </div>
     </div>

@@ -1,16 +1,28 @@
 import React from "react";
 import styles from "../styles/rentals/RentalModal.module.css";
 import { FaTimes } from "react-icons/fa";
-import modalImg from "../images/modalimg.PNG"
+import { useState, useEffect } from "react";
 
 export default function RentalModal({ closeModal }) {
+
+  const [displayContent, setDisplayContent] = useState("");
+
+  useEffect(() => {
+    fetch("http://localhost:7070/rental/rental")
+      .then((res) => res.json())
+      .then((resultsData) => {
+        console.log(resultsData);
+        setDisplayContent(resultsData);
+      });
+  }, []);
   return (
-    <div className={styles.modalBackground} onClick={() => closeModal(false)}>
+<>  <div className={styles.modalBG} onClick={() => {closeModal(false)}}>
       {/* function below is to stop modal from closing when clicking on the modal itself  */}
       <div
-        className={styles.modalContainer}
+        className={styles.modalUI}
         onClick={(e) => e.stopPropagation()}
       >
+      
         <div className={styles.closeBtn}>
           <FaTimes
             title="exit"
@@ -23,7 +35,7 @@ export default function RentalModal({ closeModal }) {
         <div className={styles.modalContent}>
           <div className={styles.modalFlex}>
             <div className={styles.modalTitle}>
-              <img src={modalImg} className={styles.modalImg} alt='modalimg'/>
+              <img src={displayContent && displayContent[0].url} className={styles.modalImg} alt='modalimg'/>
             </div>
             <div>
                 <h3 className={styles.emailTitle}>Email to yourself</h3>
@@ -41,8 +53,8 @@ export default function RentalModal({ closeModal }) {
               <button className={styles.loginBtn}>Send Email</button>
             </div>
           </div>
-        </div>
+        </div></div>
       </div>
-    </div>
+    </>
   );
 }
