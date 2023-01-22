@@ -1,13 +1,15 @@
 .ApplicationHeroContainer {
   display: grid;
   place-items: center;
+
+  max-width: 100%;
 }
 
 .heroImg {
   margin: 5%;
 
   height: 50vh;
-  width: 1500px;
+  width: 80%;
 
   object-fit: cover;
 

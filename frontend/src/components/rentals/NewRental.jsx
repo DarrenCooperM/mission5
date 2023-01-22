@@ -4,8 +4,6 @@ import styles from '../styles/rentals/NewRentals.module.css'
 import bedImg from "../icons/bed.png";
 import bathImg from "../icons/bath.png";
 import { FiMail } from '@react-icons/all-files/fi/FiMail'
-import { SlArrowDown } from "react-icons/sl";
-import mailImg from "../icons/mail.png";
 
 export default function NewRental({setOpenModal}) {
 
@@ -35,11 +33,6 @@ export default function NewRental({setOpenModal}) {
   }, []);
 
   return (<>
-  {/* <div className={styles.rentalSort}>
-    <div className={styles.rentalSortBtn}>
-    <p className={styles.sortBy}>Sort by:</p>
-    <SlArrowDown className={styles.arrowIcon}/>
-  </div></div> */}
     <div className={styles.rentalContaier}>
             <div className={styles.cardContainer}>
                 {/* CARDS  */}

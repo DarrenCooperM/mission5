@@ -7,7 +7,7 @@
   height: 40px;
   width: 100%;
 
-  background: #f1f1f1;
+  background: var(--clr-white);
   border-bottom: 1px solid var(--clr-black);
 
   font-family: "Open Sans", sans-serif;
@@ -38,6 +38,8 @@
   font-size: 15px;
   padding: 0px 30px;
 
+  background-color: var(--clr-white);
+
   /* cursor: pointer; */
 }
 
@@ -51,7 +53,6 @@
 
 .dropdownMenu {
   position: absolute;
-  backdrop-filter: blur(8px);
   z-index: 40;
   /* padding-top: 20px; */
 
@@ -59,7 +60,7 @@
   width: 400px;
   padding-top: 25px;
 
-  background-color: #f1f1f1;
+  background-color: var(--clr-white);
 }
 
 .dropdownMenu li {

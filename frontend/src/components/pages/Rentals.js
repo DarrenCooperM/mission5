@@ -11,6 +11,10 @@ function Rentals() {
     <>
       <Navbar />
       {openModal && <RentalModal closeModal={setOpenModal} />}
+      {/* oepn modal variable is used to determine whether or not the 
+      rentalmodal component is rendered. if openModal is true the 
+      rentalmodal componenet will be rendered */}
+
       {/* <RentalsContent setOpenModal={setOpenModal} /> */}
       <NewRental setOpenModal={setOpenModal} />
       <HomeFooter />

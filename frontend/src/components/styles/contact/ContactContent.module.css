@@ -7,11 +7,10 @@
 
 .contentFeatures {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 
   padding: 3%;
-  width: 100%;
-  max-width: 1800px;
+  max-width: 1750px;
   margin: 0 auto;
 }
 
@@ -51,11 +50,11 @@
 
   margin: auto;
   width: 100%;
-  padding-left: 10%;
+  padding-left: 15%;
 }
 
 .rightContentInputBoxContainer {
-  max-width: 80%;
+  width: 100%;
 }
 
 .rightContentInputBox {
@@ -121,4 +120,54 @@
 
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.295);
   border-top: 2px solid var(--clr-black);
+}
+
+@media only screen and (max-width: 1200px) {
+  .contentFeatures {
+    flex-wrap: wrap;
+    padding: 5%;
+  }
+  .leftContent {
+    width: 100%;
+    text-align: center;
+  }
+  .leftContentTitle {
+    font-size: var(--font-size-6);
+  }
+  .leftContentText {
+    font-size: var(--font-size-3);
+  }
+  .leftContentBtn {
+    padding: 10px 60px 10px 60px;
+    font-size: 18px;
+  }
+  .backIcon {
+    font-size: 20px;
+  }
+  .rightContentContainer {
+    padding-left: 0;
+  }
+  .rightContentInputBox {
+    width: 250px;
+    height: 35px;
+    margin: 0px 10px 30px 10px;
+    font-size: var(--font-size-2);
+  }
+  .rightContentMsgContainer {
+    margin: 0px 10px 30px 10px;
+  }
+  .rightContentMsgHeader {
+    font-size: 18px;
+  }
+  .rightContentMsgBox {
+    width: 500px;
+    height: 300px;
+  }
+  .sendBtn {
+    padding: 10px 10%;
+    font-size: 18px;
+  }
+  .contentImage {
+    height: 30vh;
+  }
 }

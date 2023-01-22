@@ -1,9 +1,5 @@
 import React from "react";
 import styles from "../styles/home/Content.module.css";
-// import aptImg from "../images/apt.png";
-// import interior from "../images/interior.jpg";
-// import rentals from "../images/rentals.jpg";
-// import axios from "axios";
 import { useState, useEffect } from "react";
 
 export default function HomeContent() {
@@ -63,18 +59,23 @@ export default function HomeContent() {
             {displayContent && displayContent[1].title}
           </h3>
           <h2 className={styles.contentSubtitles}>
-            {displayContent && displayContent[1].subtitle}
+            <span className={styles.midText}>
+              {displayContent && displayContent[1].subtitle}
+            </span>
           </h2>
+
           <p className={styles.contentText}>
             {displayContent && displayContent[1].text}
           </p>
           <button className={styles.findAgent}>Learn more</button>
         </div>
-        <img
-          className={styles.contentImages}
-          src={imageURL && imageURL[1].url}
-          alt="aptImg"
-        />
+        <span className={styles.midImg}>
+          <img
+            className={styles.contentImages}
+            src={imageURL && imageURL[1].url}
+            alt="aptImg"
+          />
+        </span>
         {/* third section  */}
         <img
           className={styles.contentImages}

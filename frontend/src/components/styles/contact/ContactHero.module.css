@@ -5,7 +5,7 @@
 
 .contactFlex {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 5%;
   width: 100%;
   max-width: 1800px;
@@ -57,4 +57,32 @@
 
   height: 40%;
   width: 1000px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .contactFlex {
+    flex-wrap: wrap;
+  }
+  .contactContentContainer {
+    margin-top: 5%;
+  }
+  .contactTitle {
+    font-size: var(--font-size-6);
+  }
+  .contactText {
+    width: 100%;
+    font-size: var(--font-size-3);
+  }
+  .contactDetails {
+    font-size: var(--font-size-3);
+  }
+  .contactDetailsList {
+    font-size: var(--font-size-3);
+  }
+  .contactDetailsText {
+    font-size: var(--font-size-2);
+  }
+  .contactImage {
+    width: 75%;
+  }
 }
