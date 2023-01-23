@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useRef } from "react";
-// NORMAL CSS FILE ATTACHED AS MODULES WEREN'T DOING WHAT I WANTED IT TO DO
+// Not using modules here
 import "../../../styles/application/applicationComponents/Identity.css";
 import { AiOutlineCloudUpload } from "@react-icons/all-files/ai/AiOutlineCloudUpload";
 
@@ -8,7 +8,7 @@ export default function Identity() {
   function handleFile(files) {
     alert("Number of files: " + files.length);
   }
-  // drag state
+  // drag hook
   const [dragActive, setDragActive] = useState(false);
   // ref
   const inputRef = useRef(null);
