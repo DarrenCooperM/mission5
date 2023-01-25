@@ -9,9 +9,9 @@ const Review = require("../../Schemas/home-page-schema/Review");
 // ASYNC -- allows other code to continue running without waiting for it to finish
 // allows app to run smoothly without any freezes or lag
 // async function - returns a promise that can be handled later
-router.post("/ReviewsData", async (req, res) => {
+router.post("/testimonial-data", async (req, res) => {
   const Reviews = new Review({
-    id: req.body.id,
+    image: req.body.image,
     name: req.body.name,
     job: req.body.job,
     text: req.body.text,
@@ -22,6 +22,15 @@ router.post("/ReviewsData", async (req, res) => {
     res.json(savedPost);
   } catch (error) {
     res.json({ message: error });
+  }
+});
+
+router.get("/testimonial-data", async (req, res) => {
+  try {
+    const getTest = await Review.find();
+    res.json(getTest);
+  } catch (err) {
+    res.json({ message: err });
   }
 });
 

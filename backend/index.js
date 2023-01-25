@@ -20,6 +20,7 @@ const imageRouter = require("./routes/home-page/contentsImg");
 const greetingRouter = require("./routes/mission-task/greeting");
 const messageRouter = require("./routes/contact-page/contactenquiry");
 const rentalRouter = require("./routes/rentalRoute");
+const reviewsRouter = require("./routes/home-page/ReviewSlider");
 
 // middlewares
 // app.use(bodyParser.json());
@@ -31,6 +32,7 @@ app.use("/home-content", imageRouter);
 app.use("/greeting", greetingRouter);
 app.use("/rental", rentalRouter);
 app.use("/enquiry", messageRouter);
+app.use("/testimonials", reviewsRouter);
 
 app.get("/", (req, res) => {
   res.send("Hello From Darren !");
