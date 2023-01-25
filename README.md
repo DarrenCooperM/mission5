@@ -14,6 +14,10 @@
 <ul>
 <li>MongoDB Atlas</li>
 </ul>
+<h3>Deployment</h3>
+<ul>
+<li>Docker</li>
+</ul>
 
 <h1>Getting Started</h1>
 <h3>Prerequisites</h3>
