@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReviewDetails from "./ReviewDetails";
 import { FaChevronLeft, FaChevronRight, FaQuoteRight } from "react-icons/fa";
 import styles from "../../styles/home/HomeSlider.module.css";
@@ -6,6 +6,17 @@ import styles from "../../styles/home/HomeSlider.module.css";
 const Review = () => {
   // review id
   const [index, setIndex] = useState(0);
+  // const [displayTestimonials, setDisplayTestimonials] = useState("");
+
+  // useEffect(() => {
+  //   fetch("http://localhost:7070/testimonials/testimonial-data")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       console.log(data);
+  //       setDisplayTestimonials(data);
+  //     });
+  // }, []);
+
   // review details
   const { name, job, image, text } = ReviewDetails[index];
 
@@ -48,6 +59,22 @@ const Review = () => {
 
   return (
     <article className={styles.review}>
+      {/* {displayTestimonials &&
+        displayTestimonials.map(function (data) {
+          return (
+            <>
+              <div key={data.id} className={styles.imgContainer}>
+                <img src={data.image} className={styles.personImg} />
+                <span className={styles.quoteIcon}>
+                  <FaQuoteRight />
+                </span>
+              </div>
+              <h4 className={styles.author}>{data.name}</h4>
+              <p className={styles.jon}>{data.job}</p>
+              <p className={styles.info}>{data.text}</p>
+            </>
+          );
+        })} */}
       <div className={styles.imgContainer}>
         <img src={image} alt={name} className={styles.personImg} />
         <span className={styles.quoteIcon}>

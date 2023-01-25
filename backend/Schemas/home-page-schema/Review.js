@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 
 const ReviewSchema = mongoose.Schema({
-  id: {
-    type: Number,
+  image: {
+    type: String,
     required: true,
   },
   name: {

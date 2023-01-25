@@ -3,27 +3,20 @@ import navImg from "../images/navImg.png";
 import styles from "../styles/home/Navbar.module.css";
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
-// import { useNavigate } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 import { SlArrowUp, SlArrowDown } from "react-icons/sl";
 import { Link } from "react-router-dom";
 
 export default function HomeNav() {
-  // dropdown menu for 'services' button
-  const [menu1Open, setmenu1Open] = useState(false);
-  // dropdown menu for 'About us' button
-  const [menu2Open, setmenu2Open] = useState(false);
-  // arrow animation state for 'services' button
-  const [is1Active, setIs1Active] = useState(false);
-  // arrow animation state for 'About us' button
-  const [is2Active, setIs2Active] = useState(false);
-  // let navigate = useNavigate();
+  const [dropdownMenu, setDropdownMenu] = useState({
+    menu1: false,
+    menu2: false,
+  });
+  const [is1Active, setIs1Active] = useState({
+    active1: false,
+    active2: false,
+  });
 
-  // function for changing the state of the arrow
-  function clickedArrow() {
-    setIs1Active(!is1Active);
-    setIs2Active(!is2Active);
-  }
   return (
     <>
       <div className={styles.navbarContainer}>
@@ -37,27 +30,25 @@ export default function HomeNav() {
             </Link>
             <button
               onMouseEnter={() => {
-                setmenu1Open(true);
-                setIs1Active(true);
+                setDropdownMenu({
+                  menu1: !dropdownMenu.menu1,
+                });
+                setIs1Active({
+                  active1: !is1Active.active1,
+                });
               }}
               onMouseLeave={() => {
-                setmenu1Open(false);
+                setDropdownMenu(false);
                 setIs1Active(false);
               }}
             >
               Services
-              {is1Active ? (
-                <SlArrowUp
-                  className={styles.FaArrow}
-                  onClick={clickedArrow}
-                ></SlArrowUp>
+              {is1Active.active1 ? (
+                <SlArrowUp className={styles.FaArrow}></SlArrowUp>
               ) : (
-                <SlArrowDown
-                  className={styles.slarrow}
-                  onClick={clickedArrow}
-                ></SlArrowDown>
+                <SlArrowDown className={styles.slarrow}></SlArrowDown>
               )}
-              {menu1Open && (
+              {dropdownMenu.menu1 && (
                 <div className={styles.dropdownMenu}>
                   <ul className={styles.dropdownContainer}>
                     <li>
@@ -114,27 +105,25 @@ export default function HomeNav() {
             </Link>
             <button
               onMouseEnter={() => {
-                setmenu2Open(true);
-                setIs2Active(true);
+                setDropdownMenu({
+                  menu2: !dropdownMenu.menu2,
+                });
+                setIs1Active({
+                  active2: !is1Active.active2,
+                });
               }}
               onMouseLeave={() => {
-                setmenu2Open(false);
-                setIs2Active(false);
+                setDropdownMenu(false);
+                setIs1Active(false);
               }}
             >
               About us
-              {is2Active ? (
-                <SlArrowUp
-                  className={styles.FaArrow}
-                  onClick={clickedArrow}
-                ></SlArrowUp>
+              {is1Active.active2 ? (
+                <SlArrowUp className={styles.FaArrow}></SlArrowUp>
               ) : (
-                <SlArrowDown
-                  className={styles.FaArrow}
-                  onClick={clickedArrow}
-                ></SlArrowDown>
+                <SlArrowDown className={styles.FaArrow}></SlArrowDown>
               )}
-              {menu2Open && (
+              {dropdownMenu.menu2 && (
                 <div className={styles.dropdownMenu}>
                   <ul className={styles.dropdownContainer}>
                     <li>
