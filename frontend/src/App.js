@@ -8,6 +8,7 @@ import ApplicationPersonal from "./components/pages/ApplicationPages/Application
 import ApplicationLandlord from "./components/pages/ApplicationPages/ApplicationLandlord";
 import ApplicationPrivacy from "./components/pages/ApplicationPages/ApplicationPrivacy";
 import ApplicationSubmission from "./components/pages/ApplicationPages/ApplicationSubmission";
+// paths
 
 function App() {
   return (
