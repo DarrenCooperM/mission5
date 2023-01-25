@@ -1,7 +1,13 @@
 import React from "react";
 import styles from "../../../styles/application/applicationComponents/PersonalDetails.module.css";
 
-export default function PersonalDetails() {
+export default function PersonalDetails({ setUserInput }) {
+  function handleUserInput(e) {
+    setUserInput((prevState) => {
+      return { ...prevState, [e.target.name]: e.target.value };
+    });
+  }
+  // handleUserInput not doing anything right now. Trying to figure out a way to collect the data and i
   return (
     <div className={styles.personalDetailsContainer}>
       <h3 className={styles.personalDetailsTitle}>Personal Details</h3>
@@ -13,6 +19,7 @@ export default function PersonalDetails() {
           autoComplete="off"
           placeholder="First Name"
           required="required"
+          onChange={handleUserInput}
         />
         <input
           type="text"
@@ -21,6 +28,7 @@ export default function PersonalDetails() {
           autoComplete="off"
           placeholder="Last Name"
           required="required"
+          onChange={handleUserInput}
         />
         <input
           type="number"
@@ -29,6 +37,7 @@ export default function PersonalDetails() {
           autoComplete="off"
           placeholder="Mobile"
           required="required"
+          onChange={handleUserInput}
         />
         <br />
         <input
@@ -38,6 +47,7 @@ export default function PersonalDetails() {
           autoComplete="off"
           placeholder="Email"
           required="required"
+          onChange={handleUserInput}
         />
       </form>
     </div>

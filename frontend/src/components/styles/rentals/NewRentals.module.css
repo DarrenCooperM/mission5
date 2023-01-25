@@ -18,12 +18,34 @@
   box-shadow: #0000003d 0px 1px 1px;
 }
 
-.avatar {
+.cardImg {
   position: relative;
   border-radius: 10px;
   width: 100%;
   height: 70%;
   object-fit: cover;
+}
+
+.cardSliderContainer {
+  position: absolute;
+
+  width: auto;
+  height: auto;
+}
+
+.cardSliderArrows {
+  cursor: pointer;
+
+  color: var(--clr-white);
+  font-size: 38px;
+}
+
+.left:hover {
+  color: var(--clr-black);
+}
+
+.right:hover {
+  color: var(--clr-black);
 }
 
 .cardProperty {

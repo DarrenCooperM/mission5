@@ -100,13 +100,11 @@ export default function HomeNav() {
                       <BsArrowRight />
                       <span className={styles.dropdownText}>Decluttering </span>
                     </li>
-                    <Link to="/Application-Personal-Details">
-                      <li>
-                        {" "}
-                        <BsArrowRight />
-                        <span className={styles.dropdownText}>Rental</span>
-                      </li>{" "}
-                    </Link>
+                    <li>
+                      {" "}
+                      <BsArrowRight />
+                      <span className={styles.dropdownText}>Rental</span>
+                    </li>{" "}
                   </ul>
                 </div>
               )}
@@ -154,9 +152,7 @@ export default function HomeNav() {
                 </div>
               )}
             </button>
-            <Link to="/Mission-Task">
-              <button>Mission Task</button>
-            </Link>
+            <button>Gallery</button>
             <Link to="/Contact">
               <button>Contact</button>
             </Link>

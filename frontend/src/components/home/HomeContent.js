@@ -1,102 +1,76 @@
 import React from "react";
 import styles from "../styles/home/Content.module.css";
-import { useState, useEffect } from "react";
 
-export default function HomeContent() {
-  // text content hook
-  const [displayContent, setDisplayContent] = useState("");
-  // image hook
-  const [imageURL, setImageURL] = useState("");
-
-  // getting text content from db
-  // useEffect hook - allows you to synchronize a component with an external system
-  // used here to fetch data from this endpoint
-  useEffect(() => {
-    fetch("http://localhost:7070/home-content/content-info")
-      .then((res) => res.json())
-      .then((resultsData) => {
-        console.log(resultsData);
-        setDisplayContent(resultsData); // set the state of displayContent with the data received (resultsData)
-      });
-  }, []); // empty dependency means this function will execute once
-
-  // getting the image from db
-  useEffect(() => {
-    fetch("http://localhost:7070/home-content/home-content-images")
-      .then((res) => res.json())
-      .then((imageData) => {
-        console.log(imageData);
-        setImageURL(imageData);
-      });
-  }, []);
-
+export default function HomeContent({ displayContent }) {
   return (
-    <div className={styles.contentContainer}>
-      <div className={styles.contentFeatures}>
-        {/* first section  */}
-        <img
-          className={styles.contentImages}
-          src={imageURL && imageURL[0].url}
-          alt="aptImg"
-        />
-        <div className={styles.contentSection}>
-          <h3 className={styles.contentTitles}>
-            {displayContent && displayContent[0].title}
-          </h3>
-
-          <h2 className={styles.contentSubtitles}>
-            {displayContent && displayContent[0].subtitle}
-          </h2>
-          <p className={styles.contentText}>
-            {displayContent && displayContent[0].text}
-          </p>
-          <button className={styles.findAgent}>Find An Agent</button>
-        </div>
-        {/* second section  */}
-
-        <div className={styles.contentSection}>
-          <h3 className={styles.contentTitles}>
-            {displayContent && displayContent[1].title}
-          </h3>
-          <h2 className={styles.contentSubtitles}>
-            <span className={styles.midText}>
-              {displayContent && displayContent[1].subtitle}
-            </span>
-          </h2>
-
-          <p className={styles.contentText}>
-            {displayContent && displayContent[1].text}
-          </p>
-          <button className={styles.findAgent}>Learn more</button>
-        </div>
-        <span className={styles.midImg}>
+    <>
+      <div className={styles.contentContainer}>
+        <div className={styles.contentFeatures}>
+          {/* first section  */}
           <img
             className={styles.contentImages}
-            src={imageURL && imageURL[1].url}
+            src={displayContent && displayContent[0].url}
             alt="aptImg"
           />
-        </span>
-        {/* third section  */}
-        <img
-          className={styles.contentImages}
-          src={imageURL && imageURL[2].url}
-          alt="rental pic"
-        />
-        <div className={styles.contentSection}>
-          <h3 className={styles.contentTitles}>
-            {displayContent && displayContent[2].title}
-          </h3>
-          <h2 className={styles.contentSubtitles}>
-            {displayContent && displayContent[2].subtitle}
-          </h2>
-          <p className={styles.contentText}>
-            {displayContent && displayContent[2].text}
-          </p>
-          <a href="/Rentals">
-            <button className={styles.findRentals}>Find Rentals</button>
-          </a>
+          <div className={styles.contentSection}>
+            <h3 className={styles.contentTitles}>
+              {displayContent && displayContent[0].title}
+            </h3>
+
+            <h2 className={styles.contentSubtitles}>
+              {displayContent && displayContent[0].subtitle}
+            </h2>
+            <p className={styles.contentText}>
+              {displayContent && displayContent[0].text}
+            </p>
+            <button className={styles.findAgent}>Find An Agent</button>
+          </div>
+          {/* second section  */}
+
+          <div className={styles.contentSection}>
+            <h3 className={styles.contentTitles}>
+              {displayContent && displayContent[1].title}
+            </h3>
+            <h2 className={styles.contentSubtitles}>
+              <span className={styles.midText}>
+                {displayContent && displayContent[1].subtitle}
+              </span>
+            </h2>
+
+            <p className={styles.contentText}>
+              {displayContent && displayContent[1].text}
+            </p>
+            <button className={styles.findAgent}>Learn more</button>
+          </div>
+          <span className={styles.midImg}>
+            <img
+              className={styles.contentImages}
+              src={displayContent && displayContent[1].url}
+              alt="aptImg"
+            />
+          </span>
+          {/* third section  */}
+          <img
+            className={styles.contentImages}
+            src={displayContent && displayContent[2].url}
+            alt="rental pic"
+          />
+          <div className={styles.contentSection}>
+            <h3 className={styles.contentTitles}>
+              {displayContent && displayContent[2].title}
+            </h3>
+            <h2 className={styles.contentSubtitles}>
+              {displayContent && displayContent[2].subtitle}
+            </h2>
+            <p className={styles.contentText}>
+              {displayContent && displayContent[2].text}
+            </p>
+            <a href="/Rentals">
+              <button className={styles.findRentals}>Find Rentals</button>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

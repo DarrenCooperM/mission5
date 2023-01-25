@@ -43,6 +43,10 @@
   /* cursor: pointer; */
 }
 
+.navbarLinks button:hover {
+  color: var(--clr-red-dark);
+}
+
 .FaArrow {
   padding-left: 5px;
 }

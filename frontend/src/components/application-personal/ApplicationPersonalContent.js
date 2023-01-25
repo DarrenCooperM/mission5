@@ -7,15 +7,21 @@ import CoApplicants from "./applicationPersonalComponents/CoApplicants/CoApplica
 import NonTenantOccupants from "./applicationPersonalComponents/NonTenantOccupants/NonTenantOccupants";
 import OtherForms from "./applicationPersonalComponents/OtherForms/OtherForms";
 import { ProgressBar } from "./ProgressBar";
+import { useState } from "react";
 
 export default function ApplicationPersonalContent() {
-  // let navigate = useNavigate();
+  const [userInput, setUserInput] = useState({});
+
+  const handleSubmit = (e) => {
+    console.log(userInput);
+    alert("success");
+  };
 
   return (
     <>
       <ProgressBar />
       <div className={styles.ApplicationContentContainer}>
-        <PersonalDetails />
+        <PersonalDetails setUserInput={setUserInput} />
         <Identity />
         <CoApplicants />
         <NonTenantOccupants />
@@ -32,12 +38,7 @@ export default function ApplicationPersonalContent() {
             </button>{" "}
           </a>
           <a href="/Application-Landlord-Details">
-            <button
-              className={styles.nextBtn}
-              // onClick={() => {
-              //   navigate("/Application-page-two");
-              // }}
-            >
+            <button className={styles.nextBtn} onSubmit={handleSubmit}>
               Next
             </button>
           </a>

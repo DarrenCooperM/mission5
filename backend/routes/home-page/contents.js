@@ -34,6 +34,7 @@ router.post("/contentinfo", async (req, res) => {
   // create new instance
   const postContentInfo = new Content({
     // passing data in request body.
+    url: req.body.url,
     title: req.body.title,
     subtitle: req.body.subtitle,
     text: req.body.text,
