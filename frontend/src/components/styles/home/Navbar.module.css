@@ -49,10 +49,12 @@
 
 .FaArrow {
   padding-left: 5px;
+  transition: 1s ease-in;
 }
 
 .slarrow {
   padding-left: 5px;
+  transition: 1s ease-in;
 }
 
 .dropdownMenu {

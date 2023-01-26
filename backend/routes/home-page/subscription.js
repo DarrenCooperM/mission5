@@ -13,25 +13,22 @@ const router = express.Router();
 const EmailSubscribe = require("../../Schemas/home-page-schema/Subscribe");
 
 // POST email endpoint -- posting email to database
-
-// ASYNC -- allows other code to continue running without waiting for it to finish
-// allows app to run smoothly without any freezes or lag
-// async function - returns a promise that can be handled later
 router.post("/email", async (req, res) => {
-  // create new instance
-  const sub = new EmailSubscribe({
-    // passing data in request body.
-    email: req.body.email,
-  });
-  console.log(sub);
   try {
-    // save data to database
-    // await is used here to wait for the result of sub.save()
-    // before continuing execution
-    const savedPost = sub.save();
-    res.json(savedPost);
-  } catch (error) {
-    res.json({ message: error });
+    const { email } = req.body;
+    const emailExists = await EmailSubscribe.findOne({ email: email });
+    console.log(emailExists);
+    if (emailExists) {
+      throw new Error(`${email} already exists`);
+    }
+    const subscribe = await EmailSubscribe.create({
+      email,
+    });
+    console.log(subscribe);
+    res.send();
+  } catch (e) {
+    const newError = e;
+    res.status(409).send(`${newError}`);
   }
 });
 
