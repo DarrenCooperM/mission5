@@ -9,53 +9,19 @@ import { MdKeyboardArrowLeft } from '@react-icons/all-files/md/MdKeyboardArrowLe
 
 export default function NewRental({setOpenModal, displayCards}) {
 
-    // --------------- IMAGE SLIDER (INCOMPLETE) -----------------------
-        // text content state
-    // const [displayContent, setDisplayContent] = useState("");
-
-    // image slider
-    // const [currentIndex, setCurrentIndex] = useState(0);
-
-      // getting content from db
-  // useEffect(() => {
-  //   fetch("http://localhost:7070/rental/rental")
-  //     .then((res) => res.json())
-  //     .then((resultsData) => {
-  //       // console.log(resultsData);
-  //       setDisplayContent(resultsData);
-  //     });
-  // }, []);
-  
-
-//   const goToPrevious = () => {
-//     console.log(displayContent)
-// const isFirstSlide = currentIndex === 0
-// const newIndex = isFirstSlide ? displayContent.length -1 : currentIndex - 1;
-// setCurrentIndex(newIndex)
-//  console.log(newIndex) };
-
-   
-//  const goToNext = () => {
-//   console.log(displayContent)
-// const isLastSlide = currentIndex === displayContent.length - 1;
-// const newIndex = isLastSlide ? 0 : currentIndex + 1
-// setCurrentIndex(newIndex)
-// console.log(newIndex) };
-
   return (<>
     <div className={styles.rentalContaier}>
       <div className={styles.cardContainer}>
         {/* CARDS  */}
         {displayCards && displayCards.map(function (data) {
           return (
-            <div key={data.id} className={styles.card}>       
-              <img src={data.url} className={styles.cardImg}/>
-              <div className={styles.cardSliderContainer}>
-                <div className={styles.cardSliderArrows}>
+            <div key={data.id} className={styles.card}>
+                 <div className={styles.cardSliderArrows}>
                   <MdKeyboardArrowLeft className={styles.left}/>
                   <MdKeyboardArrowRight className={styles.right}/>
-                </div>
-              </div>
+              </div>       
+              <img src={data.url} className={styles.cardImg}/>
+             
                 <div className={styles.cardProperty}>
                   <div className={styles.cardAvailPetContainer}>
                     <p className={styles.cardAvail}>Available</p>

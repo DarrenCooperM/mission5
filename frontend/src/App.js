@@ -8,6 +8,8 @@ import ApplicationPersonal from "./components/pages/ApplicationPages/Application
 import ApplicationLandlord from "./components/pages/ApplicationPages/ApplicationLandlord";
 import ApplicationPrivacy from "./components/pages/ApplicationPages/ApplicationPrivacy";
 import ApplicationSubmission from "./components/pages/ApplicationPages/ApplicationSubmission";
+import PropertyManagement from "./components/pages/PropertyManagement";
+// paths
 
 function App() {
   return (
@@ -33,6 +35,7 @@ function App() {
           path="/Application-Submission-Confirmation"
           element={<ApplicationSubmission />}
         />
+        <Route path="/Property-Management" element={<PropertyManagement />} />
       </Routes>
     </div>
   );

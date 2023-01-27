@@ -39,12 +39,14 @@
   border-radius: 20px; */
   padding: 8px 8px;
   font-weight: 600;
+  font-size: var(--font-size-4);
 }
 
 .heroTitle span {
   background-color: var(--clr-white);
   padding: 0 20px 6px 20px;
   border-radius: 20px;
+  font-size: var(--font-size-4);
 }
 
 .heroTitleTwo {
