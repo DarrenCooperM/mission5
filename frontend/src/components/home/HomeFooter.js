@@ -3,6 +3,7 @@ import styles from "../styles/home/Footer.module.css";
 import { FaFacebook } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { BiCopyright } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 export default function HomeFooter() {
   return (
@@ -12,7 +13,9 @@ export default function HomeFooter() {
           <div className={styles.contentContainers}>
             <h3 className={styles.footerTitles}>Services</h3>
             <div className={styles.footerText}>
-              <li>Property Management</li>
+              <a href="/Property-Management" style={{ textDecoration: "none" }}>
+                <li>Property Management</li>
+              </a>
               <li>Building Management</li>
               <li>Investment Property</li>
               <li>Body Corporate Administration</li>
@@ -45,7 +48,9 @@ export default function HomeFooter() {
 
         <div className={styles.footerContent}>
           <div className={styles.contentContainers}>
-            <h3 className={styles.footerTitles}>Contact</h3>
+            <a href="/Contact" style={{ textDecoration: "none" }}>
+              <h3 className={styles.footerTitles}>Contact</h3>
+            </a>
           </div>
         </div>
       </div>

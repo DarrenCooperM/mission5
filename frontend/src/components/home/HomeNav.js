@@ -51,13 +51,18 @@ export default function HomeNav() {
               {dropdownMenu.menu1 && (
                 <div className={styles.dropdownMenu}>
                   <ul className={styles.dropdownContainer}>
-                    <li>
-                      <BsArrowRight />
-                      <span className={styles.dropdownText}>
-                        {" "}
-                        Property Management
-                      </span>
-                    </li>
+                    <Link
+                      to="/Property-Management"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <li>
+                        <BsArrowRight />
+                        <span className={styles.dropdownText}>
+                          {" "}
+                          Property Management
+                        </span>
+                      </li>
+                    </Link>
                     <li>
                       {" "}
                       <BsArrowRight />
