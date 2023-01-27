@@ -8,6 +8,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
+  gap: 50px;
 
   margin: 5%;
   width: 100%;
@@ -16,8 +17,8 @@
 }
 
 .contentImages {
-  width: 625px;
-  height: 500px;
+  width: 400px;
+  height: 350px;
 
   margin: 10%;
 
@@ -25,11 +26,8 @@
 }
 
 .contentSection {
-  padding-left: 10%;
-  padding-top: 7%;
-  margin-bottom: 17%;
-
-  max-width: 100%;
+  height: 350px;
+  width: 450px;
 }
 
 .contentTitles {
@@ -39,11 +37,17 @@
 
 .contentSubtitles {
   margin-bottom: 1.5rem;
+
+  font-size: var(--font-size-4);
+
+  font-weight: 500;
 }
 
 .contentText {
-  font-size: var(--font-size-2);
+  font-size: var(--font-size-1);
   font-weight: bold;
+
+  text-align: justify;
 
   width: 100%;
 

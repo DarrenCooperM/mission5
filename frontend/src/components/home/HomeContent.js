@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/home/Content.module.css";
+import { Link } from "react-router-dom";
 
 export default function HomeContent({ displayContent }) {
   return (
@@ -40,7 +41,9 @@ export default function HomeContent({ displayContent }) {
             <p className={styles.contentText}>
               {displayContent && displayContent[1].text}
             </p>
-            <button className={styles.findAgent}>Learn more</button>
+            <a href="/Property-Management">
+              <button className={styles.findAgent}>Learn more</button>
+            </a>
           </div>
           <span className={styles.midImg}>
             <img
