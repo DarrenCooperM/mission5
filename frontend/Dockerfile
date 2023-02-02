@@ -4,7 +4,7 @@ FROM node:18-bullseye-slim
 
 # Create app directory - directory to hold the application code inside the image
 # Default location for all subsequent commands
-WORKDIR /app
+WORKDIR /app/frontend
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
