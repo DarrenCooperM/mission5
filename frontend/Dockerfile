@@ -16,7 +16,6 @@ RUN npm install
 
 # Bundle app source
 #  COPY ["<src>", "<dest>"]
-# COPY ["<src1>", "<src2>",..., "<dest>"].
 COPY . .
 
 # Makes sure port 3000 is available to the outside world (outside the container)
