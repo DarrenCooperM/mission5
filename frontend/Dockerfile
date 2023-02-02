@@ -1,6 +1,6 @@
 # node is the image we are starting from. 
 # node is base on another image layer. Eg - Debian linux
-FROM node:18-bullseye-slim
+FROM node:19
 
 # Create app directory - directory to hold the application code inside the image
 # Default location for all subsequent commands
