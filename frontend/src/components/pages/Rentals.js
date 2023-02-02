@@ -1,6 +1,6 @@
 import Navbar from "../home/HomeNav";
 import HomeFooter from "../home/HomeFooter";
-import RentalsContent from "../rentals/RentalContent";
+// import RentalsContent from "../rentals/RentalContent";
 import NewRental from "../rentals/NewRental";
 import RentalModal from "../rentals/RentalModal";
 import { useState, useEffect } from "react";

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import ReviewDetails from "./ReviewDetails";
 import { FaChevronLeft, FaChevronRight, FaQuoteRight } from "react-icons/fa";
 import styles from "../../styles/home/HomeSlider.module.css";

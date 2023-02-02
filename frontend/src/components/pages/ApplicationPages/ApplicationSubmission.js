@@ -10,7 +10,10 @@ export default function ApplicationSubmission() {
     <>
       <Navbar />
       <ApplicationHero />
-      <ApplicationSubmissionContent setFontSize={setFontSize} />
+      <ApplicationSubmissionContent
+        fontSize={fontSize}
+        setFontSize={setFontSize}
+      />
       <Footer />
     </>
   );

@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState, useEffect } from "react";
 import styles from '../styles/rentals/NewRentals.module.css'
 import bedImg from "../icons/bed.png";
 import bathImg from "../icons/bath.png";
@@ -20,7 +19,7 @@ export default function NewRental({setOpenModal, displayCards}) {
                   <MdKeyboardArrowLeft className={styles.left}/>
                   <MdKeyboardArrowRight className={styles.right}/>
               </div>       
-              <img src={data.url} className={styles.cardImg}/>
+              <img src={data.url} className={styles.cardImg} alt="propertyimage"/>
              
                 <div className={styles.cardProperty}>
                   <div className={styles.cardAvailPetContainer}>

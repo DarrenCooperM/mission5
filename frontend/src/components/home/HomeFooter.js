@@ -3,7 +3,6 @@ import styles from "../styles/home/Footer.module.css";
 import { FaFacebook } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { BiCopyright } from "react-icons/bi";
-import { Link } from "react-router-dom";
 
 export default function HomeFooter() {
   return (
