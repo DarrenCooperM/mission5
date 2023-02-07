@@ -18,6 +18,12 @@ export default function HomeNav() {
     active2: false,
   });
 
+  const [active, setActive] = useState(false);
+
+  const toggle = () => {
+    setActive(!active);
+  };
+
   return (
     <>
       <div className={styles.navbarContainer}>
@@ -25,7 +31,7 @@ export default function HomeNav() {
           <img className={styles.navImg} src={navImg} alt="navImg" />
         </Link>
         <nav>
-          <div class={styles.navbarLinks}>
+          <div class={active ? styles.navBtnsActive : styles.navbarLinks}>
             <Link to="/">
               <button>Home</button>
             </Link>
@@ -82,6 +88,16 @@ export default function HomeNav() {
             <Link to="/Contact">
               <button>Contact</button>
             </Link>
+          </div>
+          <div
+            className={active ? styles.hamburgerActive : styles.hamburger}
+            onClick={() => {
+              toggle();
+            }}
+          >
+            <span className={styles.bar}></span>
+            <span className={styles.bar}></span>
+            <span className={styles.bar}></span>
           </div>
         </nav>
         <div className={styles.searchContainer}>

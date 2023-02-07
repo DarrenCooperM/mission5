@@ -14,7 +14,7 @@ function Rentals() {
     fetch("http://localhost:7070/rental/rental")
       .then((res) => res.json())
       .then((resultsData) => {
-        // console.log(resultsData);
+        console.log(resultsData);
         setDisplayCards(resultsData);
       });
   }, []);
