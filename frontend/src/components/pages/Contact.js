@@ -1,4 +1,4 @@
-import Navbar from "../home/HomeNav";
+import Navbar from "../home/HomeNavMenu/HomeNav";
 import ContactHero from "../contact/ContactHero";
 import ContactContent from "../contact/ContactContent";
 import Footer from "../home/HomeFooter";

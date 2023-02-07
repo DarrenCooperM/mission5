@@ -1,4 +1,4 @@
-import Navbar from "../home/HomeNav";
+import Navbar from "../home/HomeNavMenu/HomeNav";
 import HomeFooter from "../home/HomeFooter";
 // import RentalsContent from "../rentals/RentalContent";
 import NewRental from "../rentals/Cards/NewRental";

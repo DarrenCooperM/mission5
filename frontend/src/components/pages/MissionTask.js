@@ -1,4 +1,4 @@
-import Navbar from "../home/HomeNav";
+import Navbar from "../home/HomeNavMenu/HomeNav";
 import Greeting from "../missionTaskSix/GreetingTask";
 
 function Contact() {

@@ -1,4 +1,4 @@
-import Navbar from "../../home/HomeNav";
+import Navbar from "../../home/HomeNavMenu/HomeNav";
 import ApplicationHero from "../../application-personal/ApplicationHero";
 import ApplicationPersonalContent from "../../application-personal/ApplicationPersonalContent";
 import Footer from "../../home/HomeFooter";

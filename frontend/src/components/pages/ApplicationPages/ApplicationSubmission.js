@@ -1,4 +1,4 @@
-import Navbar from "../../home/HomeNav";
+import Navbar from "../../home/HomeNavMenu/HomeNav";
 import ApplicationHero from "../../application-personal/ApplicationHero";
 import ApplicationSubmissionContent from "../../application-submission/ApplicationSubmissionContent";
 import Footer from "../../home/HomeFooter";

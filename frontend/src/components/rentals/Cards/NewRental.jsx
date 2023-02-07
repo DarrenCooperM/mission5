@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../../styles/rentals/NewRentals.module.css'
 import Cards from './Cards';
 
-import Arrows from './NextArrows/Arrows';
+import Arrows from '../NextArrows/Arrows';
 
 export default function NewRental({setOpenModal, displayCards}) {
 

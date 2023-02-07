@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../../home/HomeNav";
+import Navbar from "../../home/HomeNavMenu/HomeNav";
 import ApplicationHero from "../../application-personal/ApplicationHero";
 import ApplicationLandlordContent from "../../application-landlord/ApplicationLandlordContent";
 import Footer from "../../home/HomeFooter";

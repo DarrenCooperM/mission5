@@ -47,14 +47,14 @@
   color: var(--clr-red-dark);
 }
 
-.FaArrow {
-  padding-left: 5px;
-  transition: 1s ease-in;
-}
-
 .slarrow {
   padding-left: 5px;
-  transition: 1s ease-in;
+  transition: 0.1s ease-in-out;
+}
+
+.slarrowActive {
+  transform: rotate(180deg);
+  transform-origin: center;
 }
 
 .dropdownMenu {

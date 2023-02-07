@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../home/HomeNav";
+import Navbar from "../home/HomeNavMenu/HomeNav";
 import PropsManage from "../PropertyManagement/PropsManage";
 import HomeContact from "../home/HomeContact";
 import Footer from "../home/HomeFooter";

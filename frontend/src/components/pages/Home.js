@@ -1,4 +1,4 @@
-import Navbar from "../home/HomeNav";
+import Navbar from "../home/HomeNavMenu/HomeNav";
 import HomeHero from "../home/HomeHero";
 import HomeContent from "../home/HomeContent";
 import HomeBrands from "../home/HomeBrands";
