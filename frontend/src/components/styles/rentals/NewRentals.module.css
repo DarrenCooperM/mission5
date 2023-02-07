@@ -54,27 +54,30 @@
 .left {
   color: var(--clr-white);
   font-size: 70px;
-  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+  background-color: var(--clr-grey-6);
   z-index: 10;
+
+  margin-left: 5px;
 }
 
 .right {
   color: var(--clr-white);
   right: 32px;
   font-size: 70px;
-
-  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+  background-color: var(--clr-grey-6);
   z-index: 10;
+
+  margin-right: 5px;
 }
 
 .left:hover {
-  color: var(--clr-black);
-  background-color: rgba(0, 0, 0, 0.275);
+  background-color: var(--clr-grey-3);
 }
 
 .right:hover {
-  color: var(--clr-black);
-  background-color: rgba(0, 0, 0, 0.275);
+  background-color: var(--clr-grey-3);
 }
 
 .cardProperty {
@@ -159,6 +162,10 @@
 }
 
 .bathIcon {
+  padding-right: 5px;
+}
+
+.gym {
   padding-right: 5px;
 }
 
