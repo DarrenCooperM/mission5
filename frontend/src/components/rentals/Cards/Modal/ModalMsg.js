@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/rentals/ModalMsg.module.css";
+import styles from "../../../styles/rentals/ModalMsg.module.css";
 
 export default function ModalMsg() {
   return (

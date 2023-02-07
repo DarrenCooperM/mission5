@@ -1,8 +1,9 @@
 import Navbar from "../home/HomeNav";
 import HomeFooter from "../home/HomeFooter";
 // import RentalsContent from "../rentals/RentalContent";
-import NewRental from "../rentals/NewRental";
-import RentalModal from "../rentals/RentalModal";
+import NewRental from "../rentals/Cards/NewRental";
+import RentalModal from "../rentals/Cards/Modal/RentalModal";
+import Filter from "../rentals/Filter/Filter";
 import { useState, useEffect } from "react";
 
 function Rentals() {
@@ -21,6 +22,7 @@ function Rentals() {
   return (
     <>
       <Navbar />
+      <Filter />
       {openModal && <RentalModal closeModal={setOpenModal} />}
       {/* oepn modal variable is used to determine whether or not the 
       rentalmodal component is rendered. if openModal is true the 

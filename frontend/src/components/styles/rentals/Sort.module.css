@@ -1,0 +1,26 @@
+.sortContainer {
+  display: flex;
+  justify-content: flex-end;
+
+  margin: 2% 30px 2% 30px;
+}
+
+.sortContainer button {
+  width: 200px;
+  text-align: left;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 5px 10px 5px 10px;
+
+  border: none;
+  border-radius: 8px;
+
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  font-size: 25px;
+
+  height: 35px;
+}

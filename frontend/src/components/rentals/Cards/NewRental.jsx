@@ -1,10 +1,12 @@
 import React from 'react'
-import styles from '../styles/rentals/NewRentals.module.css'
-import bedImg from "../icons/bed.png";
-import bathImg from "../icons/bath.png";
+import styles from '../../styles/rentals/NewRentals.module.css'
+import bedImg from "../../icons/bed.png";
+import bathImg from "../../icons/bath.png";
 import { FiMail } from '@react-icons/all-files/fi/FiMail'
 import {MdKeyboardArrowRight } from '@react-icons/all-files/md/MdKeyboardArrowRight'
 import { MdKeyboardArrowLeft } from '@react-icons/all-files/md/MdKeyboardArrowLeft'
+
+import Arrows from './NextArrows/Arrows';
 
 export default function NewRental({setOpenModal, displayCards}) {
 
@@ -55,8 +57,9 @@ export default function NewRental({setOpenModal, displayCards}) {
                   </div>
                 </div>
                 )
-              })}
+              })} 
         </div>
+        <Arrows/>
       </div>
     </>
   )

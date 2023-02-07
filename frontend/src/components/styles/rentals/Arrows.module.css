@@ -1,0 +1,22 @@
+.arrowContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 5%;
+
+  font-size: 20px;
+}
+
+.arrowContainer p {
+  margin: 2% 1% 2% 1%;
+
+  cursor: pointer;
+}
+
+.arrowContainer p:hover {
+  text-decoration: underline;
+}
+.arrowContainer span {
+  font-size: 30px;
+}
