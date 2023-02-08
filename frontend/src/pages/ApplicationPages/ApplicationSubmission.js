@@ -1,7 +1,7 @@
-import Navbar from "../../home/HomeNavMenu/HomeNav";
-import ApplicationHero from "../../application-personal/ApplicationHero";
-import ApplicationSubmissionContent from "../../application-submission/ApplicationSubmissionContent";
-import Footer from "../../home/HomeFooter";
+import Navbar from "../../components/home/HomeNavMenu/HomeNav";
+import ApplicationHero from "../../components/application-personal/ApplicationHero";
+import ApplicationSubmissionContent from "../../components/application-submission/ApplicationSubmissionContent";
+import Footer from "../../components/home/HomeFooter";
 import { useState } from "react";
 
 export default function ApplicationSubmission() {

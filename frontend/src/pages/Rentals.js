@@ -1,9 +1,9 @@
-import Navbar from "../home/HomeNavMenu/HomeNav";
-import HomeFooter from "../home/HomeFooter";
+import Navbar from "../components/home/HomeNavMenu/HomeNav";
+import HomeFooter from "../components/home/HomeFooter";
 // import RentalsContent from "../rentals/RentalContent";
-import NewRental from "../rentals/Cards/NewRental";
-import RentalModal from "../rentals/Cards/Modal/RentalModal";
-import Filter from "../rentals/Filter/Filter";
+import NewRental from "../components/rentals/Cards/NewRental";
+import RentalModal from "../components/rentals/Cards/Modal/RentalModal";
+import Filter from "../components/rentals/Filter/Filter";
 import { useState, useEffect } from "react";
 
 function Rentals() {

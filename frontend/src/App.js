@@ -1,14 +1,14 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/pages/Home";
-import Contact from "./components/pages/Contact";
-import MissionTask from "./components/pages/MissionTask";
-import Rentals from "./components/pages/Rentals";
-import ApplicationPersonal from "./components/pages/ApplicationPages/ApplicationPersonal";
-import ApplicationLandlord from "./components/pages/ApplicationPages/ApplicationLandlord";
-import ApplicationPrivacy from "./components/pages/ApplicationPages/ApplicationPrivacy";
-import ApplicationSubmission from "./components/pages/ApplicationPages/ApplicationSubmission";
-import PropertyManagement from "./components/pages/PropertyManagement";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import MissionTask from "./pages/MissionTask";
+import Rentals from "./pages/Rentals";
+import ApplicationPersonal from "./pages/ApplicationPages/ApplicationPersonal";
+import ApplicationLandlord from "./pages/ApplicationPages/ApplicationLandlord";
+import ApplicationPrivacy from "./pages/ApplicationPages/ApplicationPrivacy";
+import ApplicationSubmission from "./pages/ApplicationPages/ApplicationSubmission";
+import PropertyManagement from "./pages/PropertyManagement";
 // paths
 
 function App() {

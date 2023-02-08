@@ -1,10 +1,10 @@
-import Navbar from "../home/HomeNavMenu/HomeNav";
-import HomeHero from "../home/HomeHero";
-import HomeContent from "../home/HomeContent";
-import HomeBrands from "../home/HomeBrands";
-import HomeSlider from "../home/homeReview/HomeSlider";
-import HomeContact from "../home/HomeContact";
-import HomeFooter from "../home/HomeFooter";
+import Navbar from "../components/home/HomeNavMenu/HomeNav";
+import HomeHero from "../components/home/HomeHero";
+import HomeContent from "../components/home/HomeContent";
+import HomeBrands from "../components/home/HomeBrands";
+import HomeSlider from "../components/home/homeReview/HomeSlider";
+import HomeContact from "../components/home/HomeContact";
+import HomeFooter from "../components/home/HomeFooter";
 import { useState, useEffect } from "react";
 
 function Home() {

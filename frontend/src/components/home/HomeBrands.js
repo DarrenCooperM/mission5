@@ -9,9 +9,9 @@ export default function HomeBrands() {
     // need to get access to icons to finish this section
     <div className={styles.brandsContainer}>
       <div className={styles.brandsFeatures}>
-        <img className={styles.brands} src={qcl} alt="qcl" />
-        <img className={styles.brands} src={westpac} alt="westpac" />
-        <img className={styles.brands} src={rea} alt="rea" />
+        <img src={qcl} alt="qcl" />
+        <img src={westpac} alt="westpac" />
+        <img src={rea} alt="rea" />
       </div>
     </div>
   );

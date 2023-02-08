@@ -14,7 +14,13 @@
   margin: 6%;
 }
 
-.contentContainers li {
+.contentContainers h3 {
+  margin-bottom: 15%;
+
+  color: var(--clr-red-dark);
+}
+
+.footerText li {
   text-decoration: none;
   list-style: none;
 
@@ -22,14 +28,8 @@
   margin: 5px 0 5px 0;
 }
 
-.contentContainers li:hover {
+.footerText li:hover {
   text-decoration: underline;
-}
-
-.footerTitles {
-  margin-bottom: 15%;
-
-  color: var(--clr-red-dark);
 }
 
 .iconsContainer {
@@ -59,4 +59,88 @@
   font-size: 12px;
 
   padding: 10px;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .footerFlex {
+    width: 80%;
+    margin: 10%;
+  }
+
+  .contentContainers h3 {
+    font-size: 36px;
+  }
+
+  .socialsIcons {
+    font-size: 40px;
+  }
+
+  .copyright {
+    font-size: 16px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footerFlex {
+    width: 90%;
+    margin: 5%;
+  }
+
+  .contentContainers h3 {
+    font-size: 28px;
+  }
+
+  .socialsIcons {
+    font-size: 30px;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .footerFlex {
+    flex-wrap: wrap;
+  }
+
+  .contentContainers {
+    margin: 6%;
+  }
+
+  .contentContainers h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .socialsIcons {
+    font-size: 20px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media only screen and (max-width: 575px) {
+  .footerFlex {
+    flex-direction: column;
+  }
+
+  .contentContainers h3 {
+    font-size: 18px;
+    margin: 10% 0 0 0;
+  }
+
+  .socialsIcons {
+    font-size: 18px;
+  }
+
+  .copyright {
+    font-size: 10px;
+  }
 }

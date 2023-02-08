@@ -102,3 +102,32 @@
   padding-left: 40px;
   padding-top: 10px;
 }
+
+@media only screen and (max-width: 767px) {
+  .contactContainer {
+    padding: 0 5em;
+  }
+
+  .emailContainer,
+  .callContainer {
+    padding: 2.5em;
+  }
+
+  .subscribeInput {
+    width: 300px;
+  }
+
+  .subscribeBtn {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .subscribeInput {
+    width: 250px;
+  }
+
+  .subscribeBtn {
+    width: 150px;
+  }
+}

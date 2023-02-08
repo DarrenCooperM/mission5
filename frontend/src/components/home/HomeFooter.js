@@ -10,7 +10,7 @@ export default function HomeFooter() {
       <div className={styles.footerFlex}>
         <div className={styles.footerContent}>
           <div className={styles.contentContainers}>
-            <h3 className={styles.footerTitles}>Services</h3>
+            <h3>Services</h3>
             <div className={styles.footerText}>
               <a href="/Property-Management" style={{ textDecoration: "none" }}>
                 <li>Property Management</li>
@@ -27,7 +27,7 @@ export default function HomeFooter() {
 
         <div className={styles.footerContent}>
           <div className={styles.contentContainers}>
-            <h3 className={styles.footerTitles}>About Us</h3>
+            <h3>About Us</h3>
             <div className={styles.footerText}>
               <li>Management Team</li>
               <li>Gallery</li>
@@ -36,19 +36,19 @@ export default function HomeFooter() {
         </div>
         <div className={styles.footerContent}>
           <div className={styles.contentContainers}>
-            <h3 className={styles.footerTitles}>Blog</h3>
+            <h3>Blog</h3>
           </div>
         </div>
         <div className={styles.footerContent}>
           <div className={styles.contentContainers}>
-            <h3 className={styles.footerTitles}>Join us</h3>
+            <h3>Join us</h3>
           </div>
         </div>
 
         <div className={styles.footerContent}>
           <div className={styles.contentContainers}>
             <a href="/Contact" style={{ textDecoration: "none" }}>
-              <h3 className={styles.footerTitles}>Contact</h3>
+              <h3>Contact</h3>
             </a>
           </div>
         </div>
