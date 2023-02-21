@@ -86,3 +86,20 @@
 .findRentals:hover {
   background-color: #f86560;
 }
+
+@media only screen and (max-width: 768px) {
+  .contentFeatures {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .contentImages {
+    width: 100%;
+    height: auto;
+  }
+
+  .contentSection {
+    width: 100%;
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/rentals/RentalModal.module.css";
+import styles from "../../../styles/rentals/RentalModal.module.css";
 import { FaTimes } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import ModalMsg from "./ModalMsg";

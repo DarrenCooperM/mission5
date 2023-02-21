@@ -1,8 +1,11 @@
+.rentalContainer {
+  display: grid;
+  place-items: center;
+}
+
 .cardContainer {
   display: flex;
-  justify-content: center;
-  align-items: stretch;
-  height: 60%;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
@@ -10,10 +13,8 @@
   background-color: #ebe9e983;
   display: flex;
   flex-direction: column;
-  width: 30%;
-  /* margin: 3%; */
   height: 600px;
-  margin: 3% 5% 3% 5%;
+  margin: 2.5% 2% 2.5% 2%;
   border-radius: 10px;
   box-shadow: #0000003d 0px 1px 1px;
   position: relative;
@@ -53,27 +54,30 @@
 .left {
   color: var(--clr-white);
   font-size: 70px;
-  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+  background-color: var(--clr-grey-6);
   z-index: 10;
+
+  margin-left: 5px;
 }
 
 .right {
   color: var(--clr-white);
   right: 32px;
   font-size: 70px;
-
-  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+  background-color: var(--clr-grey-6);
   z-index: 10;
+
+  margin-right: 5px;
 }
 
 .left:hover {
-  color: var(--clr-black);
-  background-color: rgba(0, 0, 0, 0.275);
+  background-color: var(--clr-grey-3);
 }
 
 .right:hover {
-  color: var(--clr-black);
-  background-color: rgba(0, 0, 0, 0.275);
+  background-color: var(--clr-grey-3);
 }
 
 .cardProperty {
@@ -158,6 +162,10 @@
 }
 
 .bathIcon {
+  padding-right: 5px;
+}
+
+.gym {
   padding-right: 5px;
 }
 

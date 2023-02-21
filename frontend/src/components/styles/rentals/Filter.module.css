@@ -1,0 +1,45 @@
+.filterContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 1.5%;
+  padding-top: 1%;
+
+  border-bottom: 0.4px groove var(--clr-grey-10);
+}
+
+.suburb input {
+  margin: 3% 30px 2% 30px;
+  cursor: pointer;
+
+  border: none;
+  width: 100%;
+}
+
+.suburb input:focus {
+  outline: none;
+}
+
+.suburb input::placeholder {
+  opacity: 0.8;
+}
+
+.filterMapSearch {
+  display: flex;
+}
+
+.filterMapSearch p {
+  margin: 7% 30px 3% 30px;
+  font-weight: 500;
+
+  font-size: 17px;
+
+  cursor: pointer;
+}
+
+.filterMapSearch p:hover {
+  opacity: 0.7;
+
+  text-decoration: underline;
+}

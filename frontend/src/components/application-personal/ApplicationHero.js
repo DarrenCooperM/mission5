@@ -34,9 +34,9 @@ export default function ApplicationHero() {
           <h3>145 Mountain Rd Epsom</h3>
           <h3>Available: 09 January 2023</h3>
           <div className={styles.iconContainer}>
-            <img src={bedImg} className={styles.icons} />
+            <img src={bedImg} className={styles.icons} alt="bed icon" />
             <p>2 Bed</p>
-            <img src={bathImg} className={styles.icons} />
+            <img src={bathImg} className={styles.icons} alt="bath icon" />
             <p>1 Bath</p>
           </div>
         </div>

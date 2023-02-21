@@ -6,7 +6,7 @@ FROM node:18-bullseye-slim
 # Default location for all subsequent commands
 WORKDIR /app
 
-# Install app dependencies
+# Install app dependenciess
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 # where available (npm@5+)
 COPY package*.json ./
@@ -16,7 +16,6 @@ RUN npm install
 
 # Bundle app source
 #  COPY ["<src>", "<dest>"]
-# COPY ["<src1>", "<src2>",..., "<dest>"].
 COPY . .
 
 # Makes sure port 3000 is available to the outside world (outside the container)
