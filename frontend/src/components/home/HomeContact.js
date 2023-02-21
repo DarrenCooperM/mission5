@@ -40,7 +40,7 @@ export default function HomeContact() {
 
   return (
     <div className={styles.contactContainer}>
-      <h1 className={styles.contactTitle}>Get in Touch</h1>
+      <h1 className={styles.contactTitle}>Get in TOUCH</h1>
       <div className={styles.contacts}>
         <div className={styles.emailContainer}>
           <h3 className={styles.email}>Email us</h3>
