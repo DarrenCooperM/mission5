@@ -84,7 +84,7 @@ export default function HomeNav() {
               />
               {dropdownMenu.menu2 && <AboutUsDropdown />}
             </button>
-            <button>Blog</button>
+            <button>Gallery</button>
             <Link to="/Contact">
               <button>Contact</button>
             </Link>
